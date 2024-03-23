@@ -80,7 +80,7 @@
         <div class="bg-neutral-100 rounded-2xl">
           <div class="flex p-20">
             <div class="flex items-start flex-col w-1/2 gap-5">
-              <h1 class="text-4xl font-extrabold text-JH-blue">Our Services</h1>
+              <h1 :class="styling.title">Our Services</h1>
               <p class="w-3/4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 dolor quam, placerat sit amet eros quis, scelerisque lobortis
@@ -106,7 +106,7 @@
       <!-- Why Choose Us -->
       <section class="py-16">
         <div class="flex flex-col text-center items-center pb-16">
-          <h1 class="text-4xl font-extrabold text-JH-blue">Why Choose Us?</h1>
+          <h1 :class="styling.title">Why Choose Us?</h1>
           <p class="text-lg text-neutral-500 w-3/5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
             quam, placerat sit amet eros quis, scelerisque lobortis diam. Duis
@@ -141,14 +141,72 @@
           </div>
         </div>
       </section>
+
+      <!-- Testimony -->
+      <section>
+        <div class="text-center">
+          <h1 :class="styling.title">Let's See what've been working on</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <UCarousel
+          v-slot="{ item }"
+          :items="items"
+          :ui="{ item: 'basis-full' }"
+          class="w-[1000px] mx-auto rounded-lg overflow-hidden"
+        >
+          <div
+            class="relative w-full h-[300px] mt-10 flex items-end justify-end bg-JH-red mx-12"
+          >
+            <div class="w-1/2 h-full flex items-end justify-end">
+              <NuxtImg src="/img/bg-jh.jpeg" class="h-full" />
+            </div>
+            <div
+              class="bg-JH-blue h-full w-9/12 left-0 absolute triangle"
+              id="ijo"
+            >
+              <div class="flex flex-col text-white px-12 justify-center h-full">
+                <h1 class="text-white text-4xl font-bold">
+                  Jumbotron Jl. aaaaaa
+                </h1>
+                <p class="pr-16">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  dolor quam, placerat sit amet eros quis, scelerisque lobortis
+                  diam. Duis tincidunt
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="bg-JH-blue w-full h-[400px] text-white items-center justify-end flex"
+          >
+            <h1>Jumbotron Jl. aaaaaa</h1>
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              dolor quam, placerat sit amet eros quis, scelerisque lobortis
+              diam. Duis tincidunt
+            </p>
+            <div
+              class="h-full w-2/3 bg-cover bg-center"
+              style="background-image: url('/img/bg-jh.jpeg')"
+            ></div>
+          </div> -->
+        </UCarousel>
+      </section>
     </div>
   </div>
 </template>
-
+<style>
+.triangle {
+  clip-path: polygon(0% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+</style>
 <script>
 export default {
   data() {
     return {
+      styling: {
+        title: "text-4xl font-extrabold text-JH-blue",
+      },
       whyUs: [
         {
           no: 1,
