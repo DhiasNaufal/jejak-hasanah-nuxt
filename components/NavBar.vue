@@ -30,7 +30,7 @@
       </div>
       <div
         id="navbar"
-        class="triangle text-white px-10 w-full h-[40%] bg-JH-black flex items-center gap-12"
+        class="triangle text-white px-16 w-full h-[40%] bg-JH-black flex items-center gap-16 text-xs"
       >
         <NuxtLink>Beranda</NuxtLink>
         <NuxtLink>Tentang Perusahaan</NuxtLink>
@@ -44,7 +44,7 @@
 </template>
 <style>
 .triangle {
-  clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 .btn {
   clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
