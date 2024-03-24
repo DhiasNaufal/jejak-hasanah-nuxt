@@ -14,7 +14,7 @@ export default {
         "my-heading": ["font-bold", "text-3xl", "text-blue-700"], // Example classes
       },
       colors: {
-        JHui: {
+        JBlue: {
           50: "#eef3ff",
           100: "#dfe9ff",
           200: "#c6d4ff",
@@ -26,6 +26,19 @@ export default {
           800: "#2e2ea5",
           900: "#2f318b",
           950: "#1a1a4c",
+        },
+        JRed: {
+          50: "#fff0f1",
+          100: "#ffdde0",
+          200: "#ffc1c6",
+          300: "#ff959e",
+          400: "#ff5967",
+          500: "#ff2638",
+          600: "#fc061a",
+          700: "#e60013",
+          800: "#af0513",
+          900: "#900c17",
+          950: "#500007",
         },
         JH: {
           red: "#E60013",

@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 html {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
