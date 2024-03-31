@@ -3,7 +3,7 @@
   <section id="Hero Header" class="relative h-[85vh]">
     <div
       class="h-full bg-cover bg-center"
-      style="background-image: url('/img/bg-jh.jpeg')"
+      style="background-image: url('/img/bus1.jpg')"
     >
       <div
         class="text-white h-full bg-gradient-to-r from-JH-black to-transparent bg-opacity-5"
