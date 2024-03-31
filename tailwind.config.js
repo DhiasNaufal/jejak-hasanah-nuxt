@@ -9,6 +9,16 @@ export default {
     "./error.vue",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     extend: {
       presets: {
         "my-heading": ["font-bold", "text-3xl", "text-blue-700"], // Example classes

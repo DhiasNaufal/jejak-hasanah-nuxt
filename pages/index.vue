@@ -9,7 +9,7 @@
         class="text-white h-full bg-gradient-to-r from-JH-black to-transparent bg-opacity-5"
       >
         <div
-          class="w-2/3 flex h-full items-start px-40 justify-center flex-col gap-5"
+          class="w-2/3 flex h-full items-start px-40 justify-center flex-col gap-5 relative"
         >
           <h1 class="text-6xl font-dsp">
             JEJAK HASANAH <br />InsyaAllah Amanah
@@ -20,6 +20,26 @@
             ad minim veniam, quis nostrud exercitatio
           </p>
           <ButtonPrimary />
+        </div>
+        <div
+          class="h-1/6 bg-JH-black bg-opacity-70 absolute right-0 justify-center gap-32 bottom-0 flex px-32"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="text-5xl">5+</h1>
+            <p>Years Of Serving</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="text-5xl">50+</h1>
+            <p>Project Done</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="text-5xl">100+</h1>
+            <p>Team Members</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="text-5xl">40+</h1>
+            <p>Clients</p>
+          </div>
         </div>
       </div>
     </div>
