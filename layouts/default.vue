@@ -1,5 +1,6 @@
 <template>
-  <NavBar />
+  <AppNavbar />
+  <!-- <NavBar /> -->
   <slot />
   <Footer />
 </template>

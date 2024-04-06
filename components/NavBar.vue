@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-3">
+  <div class="hidden md:flex gap-3">
     <div class="sm:w-[40%] hidden sm:flex justify-end py-5">
       <NuxtImg src="/img/JH-biru.png" width="228" />
     </div>
@@ -32,14 +32,22 @@
         id="navbar"
         class="triangle text-white px-16 w-full h-[40%] bg-JH-black flex items-center gap-16 text-xs"
       >
-        <NuxtLink>Beranda</NuxtLink>
-        <NuxtLink>Tentang Perusahaan</NuxtLink>
-        <NuxtLink>Layanan</NuxtLink>
-        <NuxtLink>Project</NuxtLink>
-        <NuxtLink>Project</NuxtLink>
-        <NuxtLink>Project</NuxtLink>
+        <NuxtLink to="/">Beranda</NuxtLink>
+        <NuxtLink to="/tentang">Tentang Perusahaan</NuxtLink>
+        <NuxtLink to="/layanan">Layanan</NuxtLink>
+        <NuxtLink to="/portofolio">Projek</NuxtLink>
+        <UButton label="Hubungi Kami" />
       </div>
     </div>
+  </div>
+  <div class="md:hidden flex justify-between container bg-JH-black py-3">
+    <NuxtImg src="/img/logo/JH-Logo.svg" format="webp" sizes="30" />
+    <UButton variant="ghost">
+      <UIcon
+        name="i-heroicons-bars-3-bottom-right-16-solid"
+        class="text-3xl text-white"
+      />
+    </UButton>
   </div>
 </template>
 <style>
