@@ -15,12 +15,7 @@
       <div
         class="w-1/2 py-10 pl-10 flex justify-start bg-neutral-100 border-l-2 border-black"
       >
-        <NuxtImg
-          src="/img/bus.png"
-          width="200"
-          height="200"
-          class="rounded-full"
-        />
+        <img src="/img/bus.png" class="rounded-full w-[200px] h-[200px]" />
       </div>
     </div>
   </section>

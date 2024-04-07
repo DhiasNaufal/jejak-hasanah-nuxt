@@ -99,7 +99,7 @@
               consectetur adipiscing elit.
             </p>
             <!-- <ButtonPrimary class="flex" /> -->
-            <AppButtonPrimary label="Hubungi" />
+            <AppButtonPrimary label="Pelajari lebih lanjut" />
           </div>
           <NuxtImg
             src="img/logo-shade.png"
@@ -123,7 +123,7 @@
               dolor quam, placerat sit amet eros quis, scelerisque lobortis
               diam. Duis tincidunt
             </p>
-            <ButtonPrimary />
+            <AppButtonPrimary label="Pelajari lebih lanjut" />
           </div>
           <div class="md:w-2/4">
             <UCarousel
@@ -149,7 +149,7 @@
                 <div
                   class="h-full w-full bg-black bg-gradient-to-t from-JH-black to-transparent bg-opacity-5 rounded-xl flex flex-col text-white justify-end p-5"
                 >
-                  <h4 class="text-2xl font-bold">Trasnportation Services</h4>
+                  <h4 class="text-2xl font-bold">Tranportation Services</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nulla dolor quam.
@@ -227,7 +227,7 @@
           <div
             class="h-full w-full bg-black bg-gradient-to-t from-JH-black to-transparent bg-opacity-5 rounded-xl flex flex-col text-white justify-end p-5"
           >
-            <h4 class="text-2xl font-bold">Trasnportation Services</h4>
+            <h4 class="text-2xl font-bold">Transportation Services</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
               dolor quam.

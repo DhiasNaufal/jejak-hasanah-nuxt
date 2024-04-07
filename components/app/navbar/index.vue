@@ -1,7 +1,7 @@
 <template>
   <div class="container border-b">
     <div class="hidden md:flex items-center h-full justify-between py-3">
-      <NuxtImg src="/img/logo/JH-Logo.svg" format="webp" sizes="50" />
+      <NuxtImg src="/img/logo/JH-Logo.svg" format="webp" width="50" />
       <div
         class="flex gap-16 col-start-2 col-span-4 font-semibold text-JH-grey"
       >
