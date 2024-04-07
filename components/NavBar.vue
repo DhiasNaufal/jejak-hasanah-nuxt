@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden md:flex gap-3">
+  <div class="md:flex gap-3">
     <div class="sm:w-[40%] hidden sm:flex justify-end py-5">
       <NuxtImg src="/img/JH-biru.png" width="228" />
     </div>
