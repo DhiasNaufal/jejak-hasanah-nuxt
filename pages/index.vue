@@ -1,13 +1,18 @@
 <template>
   <!-- Hero Section -->
   <div class="container">
-    <section class="h-screen">
-      <div class="flex gap-10 h-1/2 items-center">
-        <h1 class="text-8xl font-semibold">
-          TRANSPORT <br />
-          SOLUTION
+    <section class="h-screen flex flex-col">
+      <div
+        class="flex flex-col md:flex-row gap-10 h-1/2 items-center justify-center mb-20 md:mb-10 mt-10 md:mt-0"
+      >
+        <h1
+          class="text-5xl text-center md:text-8xl 2xl:text-9xl font-semibold md:text-start"
+        >
+          TRANSPORT SOLUTION
         </h1>
-        <div class="flex flex-col items-start justify-start gap-10">
+        <div
+          class="flex flex-col md:items-start items-center justify-start gap-10"
+        >
           <NuxtImg
             src="/img/bus1.jpg"
             width="230"
@@ -15,7 +20,7 @@
             class="rounded-full"
           />
 
-          <p class="text-md w-4/5">
+          <p class="text-md w-4/5 text-center md:text-start">
             kami bangga dengan menyediakan transportasi dan periklanan terbaik
             yang tersedia di Indonesia
           </p>
@@ -27,17 +32,18 @@
       >
         <UButton
           :ui="{ rounded: 'rounded-full' }"
-          class="right-36 -top-12 absolute"
+          class="right-20 md:right-36 -top-12 absolute"
           color="red"
         >
           <UIcon
             name="i-heroicons-arrow-up-right-16-solid"
-            class="text-[150px] rounded-full"
+            class="text-[70px] md:text-[150px] rounded-full"
           />
         </UButton>
       </div>
     </section>
   </div>
+
   <!-- Client -->
   <section
     id="client"
@@ -47,20 +53,26 @@
       <NuxtImg :src="item" format="webp" />
     </div>
   </section>
+
   <div class="container">
     <!-- Works Activity -->
     <section class="relative">
       <NuxtImg
-        class="absolute z-10 -left-32 bottom-0 sm:-bottom-16 xl:-left-28"
+        class="absolute z-10 md:-left-32 -left-10 -bottom-5 md:-bottom-16 xl:-left-28"
         src="/img/lengkung.png"
         format="webp"
-        sizes="sm:250px 2xl:300px"
+        sizes="180px sm:250px 2xl:300px"
       />
-      <div class="flex justify-center items-center gap-20 py-16">
-        <div id="picture" class="w-1/2 flex items-end justify-end gap-12">
-          <LazyNuxtImg
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-20 py-10 md:py-16"
+      >
+        <div
+          id="picture"
+          class="md:w-1/2 flex items-end justify-end md:gap-12 gap-5"
+        >
+          <NuxtImg
             src="img/bus.png"
-            sizes="sm:1000 x"
+            sizes="md:590 300"
             class="rounded-xl"
             format="webp"
           />
@@ -71,7 +83,7 @@
             format="webp"
           />
         </div>
-        <div id="Text" class="w-1/2 relative">
+        <div id="Text" class="md:w-1/2 relative">
           <div class="flex flex-col items-start">
             <p>About us</p>
             <h1 class="text-4xl font-extrabold font-dms text-JH-blue">
@@ -99,11 +111,11 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="py-16">
+    <section id="services" class="mb:py-16">
       <div class="bg-neutral-100 rounded-2xl">
-        <div class="flex py-24 pb-36">
+        <div class="flex flex-col md:flex-row py-16 pb-28 md:py-24 md:pb-36">
           <div
-            class="flex items-start justify-center flex-col w-1/2 gap-5 pl-16"
+            class="flex items-start justify-center flex-col md:w-1/2 gap-5 md:pl-16 px-10 mb-5"
           >
             <h1 :class="styling.title">Our Services</h1>
             <p class="w-3/4">
@@ -113,20 +125,21 @@
             </p>
             <ButtonPrimary />
           </div>
-          <div class="w-2/4">
+          <div class="md:w-2/4">
             <UCarousel
               :items="items"
-              :ui="{ item: 'basis-4/5' }"
+              :ui="{ item: 'w-full' }"
               arrows
               :prev-button="{
                 color: 'red',
                 icon: 'i-heroicons-chevron-left-16-solid',
-                class: 'left-[6%] top-[112%] rounded-none p-2',
+                class: 'left-[36%] md:left-[6%] top-[112%] rounded-none p-2',
               }"
               :nextButton="{
                 color: 'red',
                 icon: 'i-heroicons-chevron-right-16-solid',
-                class: 'right-[77%] top-[112%] rounded-none p-2 ',
+                class:
+                  'right-[36%] md:right-[77%] top-[112%] rounded-none p-2 ',
               }"
             >
               <div
@@ -151,15 +164,15 @@
 
     <!-- Why Choose Us -->
     <section class="py-16">
-      <div class="flex flex-col text-center items-center pb-16">
+      <div class="flex flex-col text-center items-center pb-16 gap-3">
         <h1 :class="styling.title">Why Choose Us?</h1>
-        <p class="text-lg text-neutral-500 w-3/5">
+        <p class="text-lg text-neutral-500 md:w-3/5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
           quam, placerat sit amet eros quis, scelerisque lobortis diam. Duis
           tincidunt
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-2 relative">
+      <div class="grid md:grid-cols-3 gap-2 relative">
         <NuxtImg
           src="img/logo-shade.png"
           class="-z-10 absolute right-0 top-10"
@@ -186,28 +199,42 @@
     <!-- Testimony -->
     <section class="py-16">
       <div class="text-center pb-16">
-        <h1 :class="styling.title">Let's See what've been working on</h1>
+        <h1 :class="styling.title">Let's See what we've been working on</h1>
         <p class="leading-tight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
       <UCarousel
         :items="items"
-        :ui="{ item: 'basis-3/4' }"
-        class="w-[1000px] mx-auto rounded-lg"
+        :ui="{ item: 'w-full' }"
+        class="mx-auto rounded-lg"
         arrows
         :prev-button="{
           color: 'red',
           icon: 'i-heroicons-chevron-left-16-solid',
-          class: 'left-[46%] top-2 rounded-none p-2',
+          class: 'left-[46%] -top-8 rounded-none p-2',
         }"
         :nextButton="{
           color: 'red',
           icon: 'i-heroicons-chevron-right-16-solid',
-          class: 'right-[46%] top-2 rounded-none p-2 ',
+          class: 'right-[46%] -top-8 rounded-none p-2 ',
         }"
       >
         <div
+          class="relative w-full h-[400px] mt-0 flex items-end justify-end mx-10 bg-cover rounded-xl"
+          style="background-image: url('/img/bg-jh.jpeg')"
+        >
+          <div
+            class="h-full w-full bg-black bg-gradient-to-t from-JH-black to-transparent bg-opacity-5 rounded-xl flex flex-col text-white justify-end p-5"
+          >
+            <h4 class="text-2xl font-bold">Trasnportation Services</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              dolor quam.
+            </p>
+          </div>
+        </div>
+        <!-- <div
           class="relative w-full h-[300px] mt-10 flex items-end justify-end mx-5"
         >
           <div class="w-1/2 h-full flex items-end justify-end">
@@ -223,24 +250,8 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </UCarousel>
-    </section>
-    <section
-      class="h-full bg-cover bg-center rounded-tl-3xl rounded-tr-3xl"
-      style="background-image: url('/img/bus1.jpg')"
-    >
-      <div
-        class="bg-JH-blue bg-opacity-60 flex flex-col items-center justify-center py-16 gap-5 rounded-tl-3xl rounded-tr-3xl"
-      >
-        <h1 class="text-4xl font-semibold text-white">
-          Hubungi kamu untuk obrolan lebih lanjut
-        </h1>
-        <div class="flex gap-3">
-          <AppButtonPrimary label="Hubungi" />
-          <AppButtonPrimary label="Hubungi" />
-        </div>
-      </div>
     </section>
   </div>
 </template>
