@@ -1,9 +1,15 @@
 <template>
   <section id="timeline">
-    <div class="w-full flex">
+    <div class="w-full flex relative">
       <div
-        class="w-1/2 py-10 pr-10 flex justify-end items-center bg-neutral-100 border-r-2 border-black"
+        class="bg-black h-[10px] w-[10px] absolute bottom-0 -right-0.5 rounded-tl-full"
+      ></div>
+      <div
+        class="relative w-1/2 py-10 pr-10 flex justify-end items-center bg-neutral-100 border-r-2 border-black"
       >
+        <!-- <div
+          class="bg-black h-[10px] w-[10px] absolute bottom-0 -right-0.5 rounded-tl-full"
+        ></div> -->
         <NuxtImg src="/img/bus.png" class="rounded-full w-[200px] h-[200px]" />
       </div>
       <div

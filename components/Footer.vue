@@ -2,7 +2,8 @@
   <div class="bg-JH-black">
     <div class="container text-white grid grid-cols-4 gap-10 py-10 px-32">
       <div>
-        Logo
+        <NuxtImg src="`gs://webcdn-62e2d.appspot.com/JH-Logo.svg`" />
+        <NuxtLink src="img/logo/JH-Logo.png" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
           quam, placerat sit ame

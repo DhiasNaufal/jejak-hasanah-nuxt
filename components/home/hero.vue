@@ -1,5 +1,5 @@
 <template>
-  <!-- <section id="Hero Header" class="relative h-[85vh]">
+  <section id="Hero Header" class="relative h-[85vh]">
     <div
       class="h-full bg-cover bg-center"
       style="background-image: url('/img/bus1.jpg')"
@@ -42,5 +42,5 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 </template>

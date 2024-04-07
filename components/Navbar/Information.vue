@@ -3,7 +3,7 @@
     <Icon :name="icon" size="40" class="text-JH-blue" />
     <div>
       <p class="text-JH-grey text-sm my-0">{{ title }}</p>
-      <h1 class="font-medium text-md my-0">{{ information }}</h1>
+      <p class="">{{ information }}</p>
     </div>
   </div>
 </template>
