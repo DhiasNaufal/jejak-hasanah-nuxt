@@ -1,5 +1,4 @@
 <template>
-  <!-- <AppNavbar /> -->
   <!-- <Navbar /> -->
   <!-- Hero Section -->
   <!-- <HomeModern /> -->

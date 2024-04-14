@@ -1,19 +1,16 @@
 <template>
   <section id="timeline">
     <div class="w-full flex relative">
-      <div
+      <!-- <div
         class="bg-black h-[10px] w-[10px] absolute bottom-0 -right-0.5 rounded-tl-full"
-      ></div>
+      ></div> -->
       <div
-        class="relative w-1/2 py-10 pr-10 flex justify-end items-center bg-neutral-100 border-r-2 border-black"
+        class="relative w-1/2 py-10 pr-10 flex justify-end items-center border-r-2 border-black"
       >
-        <!-- <div
-          class="bg-black h-[10px] w-[10px] absolute bottom-0 -right-0.5 rounded-tl-full"
-        ></div> -->
         <NuxtImg src="/img/bus.png" class="rounded-full w-[200px] h-[200px]" />
       </div>
       <div
-        class="w-1/2 py-10 pl-10 flex flex-col justify-center bg-neutral-100 border-l-2 border-black"
+        class="w-1/2 py-10 pl-10 flex flex-col justify-center border-l-2 border-black"
       >
         <h1>2019</h1>
         <h1 class="text-2xl">Jejak Hasanah Berdiri</h1>

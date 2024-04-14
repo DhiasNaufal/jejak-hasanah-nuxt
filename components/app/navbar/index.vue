@@ -1,27 +1,56 @@
 <template>
-  <div class="container border-b">
-    <div class="hidden md:flex items-center h-full justify-between py-3">
-      <NuxtImg src="/img/logo/JH-Logo.svg" format="webp" class="w-[50px]" />
+  <div class="md:flex gap-3 hidden">
+    <div class="sm:w-[40%] hidden sm:flex justify-end py-5">
+      <NuxtImg src="/img/JH-biru.png" width="228" />
+    </div>
+
+    <div class="flex flex-col justify-end w-[60%]">
+      <div id="contact" class="flex gap-10 items-center pl-12 pb-4">
+        <NavbarInformation
+          icon="mdi:email"
+          title="Email"
+          information="jhAnais@gmail.com"
+        />
+        <NavbarInformation
+          icon="mdi:map-marker"
+          title="Email"
+          information="jhAnais@gmail.com"
+        />
+        <!-- <UButton> Hubungi</UButton> -->
+
+        <!-- <NuxtLink
+          to="/"
+          class="flex items-center bg-JH-blue h-[44px] rounded-sm"
+        >
+          <p class="font-normal pl-4 pr-2 text-white">Contact Us</p>
+          <div
+            class="flex items-center justify-center btn h-full bg-black w-[30px] rounded-e-sm"
+          >
+            <Icon name="mdi:chevron-right" class="text-white" />
+          </div>
+        </NuxtLink> -->
+      </div>
+
       <div
-        class="flex gap-16 col-start-2 col-span-4 font-semibold text-JH-grey"
+        id="navbar"
+        class="triangle text-white px-16 w-full h-[40%] bg-JH-black flex items-center gap-20 text-sm"
       >
-        <div v-for="menu in navMenu">
-          <NuxtLink :to="menu.path" class="hover:text-JH-black">{{
-            menu.title
-          }}</NuxtLink>
+        <div v-for="(menu, index) in navMenu">
+          <NuxtLink :to="menu.path">{{ menu.title }}</NuxtLink>
         </div>
       </div>
-      <AppButtonPrimary class="flex items-center" label="Hubungi Kami" />
     </div>
-    <div class="flex md:hidden justify-between">
-      <NuxtImg src="/img/logo/JH-Logo.svg" format="webp" sizes="30" />
-      <UButton variant="ghost" :ui="{ rounded: 'rounded-full' }">
-        <UIcon
-          name="i-heroicons-bars-3-bottom-right-16-solid"
-          class="text-3xl text-black"
-        />
-      </UButton>
-    </div>
+  </div>
+
+  <!-- Mobile -->
+  <div class="md:hidden flex justify-between container bg-JH-black py-3">
+    <NuxtImg src="/img/logo/JH-Logo.svg" format="webp" sizes="30" />
+    <UButton variant="ghost">
+      <UIcon
+        name="i-heroicons-bars-3-bottom-right-16-solid"
+        class="text-3xl text-white"
+      />
+    </UButton>
   </div>
 </template>
 <script>

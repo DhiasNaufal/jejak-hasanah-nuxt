@@ -18,9 +18,9 @@
         }"
         class="flex flex-col justify-center items-center"
       >
-        <template #tentang> <Tentang /> </template>
-        <template #struktur> <Tentang /></template>
-        <template #sertifikasi> <Tentang /> </template>
+        <template #tentang> <PerusahaanTentang /> </template>
+        <template #struktur> <PerusahaanTentangLayanan /></template>
+        <template #sertifikasi> <PerusahaanTentangSertifikasi /> </template>
       </UTabs>
     </section>
 
