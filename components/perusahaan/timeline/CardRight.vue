@@ -13,7 +13,10 @@
         </p>
       </div>
       <div class="w-1/2 py-10 pl-10 flex justify-start border-l-2 border-black">
-        <img src="/img/bus.png" class="rounded-full w-[200px] h-[200px]" />
+        <img
+          src="/img/bus.png"
+          class="rounded-full w-[200px] h-[200px] object-cover"
+        />
       </div>
     </div>
   </section>

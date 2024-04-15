@@ -1,7 +1,9 @@
 <template>
   <div class="md:flex gap-3 hidden">
     <div class="sm:w-[40%] hidden sm:flex justify-end py-5">
-      <NuxtImg src="/img/JH-biru.png" width="228" />
+      <NuxtLink to="/">
+        <NuxtImg src="/img/JH-biru.png" width="228" />
+      </NuxtLink>
     </div>
 
     <div class="flex flex-col justify-end w-[60%]">
@@ -16,19 +18,6 @@
           title="Email"
           information="jhAnais@gmail.com"
         />
-        <!-- <UButton> Hubungi</UButton> -->
-
-        <!-- <NuxtLink
-          to="/"
-          class="flex items-center bg-JH-blue h-[44px] rounded-sm"
-        >
-          <p class="font-normal pl-4 pr-2 text-white">Contact Us</p>
-          <div
-            class="flex items-center justify-center btn h-full bg-black w-[30px] rounded-e-sm"
-          >
-            <Icon name="mdi:chevron-right" class="text-white" />
-          </div>
-        </NuxtLink> -->
       </div>
 
       <div

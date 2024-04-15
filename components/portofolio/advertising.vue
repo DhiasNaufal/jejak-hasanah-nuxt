@@ -19,7 +19,7 @@
           },
           footer: {
             base: ' rounded-b-lg text-white',
-            background: 'bg-black',
+            background: 'bg-JH-black',
             padding: 'px-4 py-4 sm:px-6',
           },
         }"
