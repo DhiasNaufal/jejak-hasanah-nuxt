@@ -1,67 +1,69 @@
 <template>
-  <main>
-    <section class="bg-JH-black text-white">
-      <div class="flex container items-center h-[90vh]">
-        <div class="md:w-1/2 flex flex-col items-start gap-4">
-          About Company
-          <h1 class="text-6xl font-semibold">
-            Kami Menyediakan Layanan Transportasi dan Periklanan
-          </h1>
-          <AppButtonPrimary label="Pelajari lebih lanjut" />
-        </div>
-        <div
-          id="picture"
-          class="md:w-1/2 flex items-end justify-end md:gap-12 gap-5"
-        >
-          <NuxtImg
-            src="/img/bus.png"
-            heigth="600"
-            width="700"
-            class="rounded-xl"
-            format="webp"
-          />
-          <NuxtImg
-            src="img/bus.png"
-            height="241"
-            class="rounded-xl"
-            format="webp"
-          />
-        </div>
-      </div>
-    </section>
-    <section class="container py-12">
-      <UTabs
-        :items="items"
-        :ui="{
-          list: {
-            width: 'md:w-1/2',
-            rounded: 'rounded-full',
-            marker: {
-              rounded: 'rounded-full',
-            },
-            tab: {
-              rounded: 'rounded-full',
-            },
-          },
-        }"
-        class="flex flex-col justify-center items-center"
-      >
-        <template #tentang> <Tentang /> </template>
-        <template #struktur> <Tentang /></template>
-        <template #sertifikasi> <Tentang /> </template>
-      </UTabs>
-    </section>
-
-    <section class="container">
-      <div class="flex flex-col items-center">
-        <h1 class="text-JH-blue font-semibold">Sejarah perusahaan</h1>
-        <p>
-          Perjalanan kami dimotivasi untuk menjadi perusahaan yang xxx & xxxx
+  <AppHero />
+  <main class="container">
+    <section class="pt-16">
+      <div class="flex justify-between">
+        <h1 class="font-bold animate-fade-down w-1/3">
+          Layanan Pengiklanan Kami
+        </h1>
+        <p class="text-end w-1/3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
+          quam, placerat sit amet eros quis,
         </p>
       </div>
     </section>
-    <section class="container">
-      <AppBannerFooter />
+    <section>
+      <div
+        v-for="item in services"
+        class="w-full flex items-start duration-500 bg-neutral-100 hover:bg-JH-blue hover:scale-105 hover:text-white pl-12 px-6 py-6 rounded-3xl mb-1"
+        @mouseover="isHover = true"
+        @mouseleave="isHover = false"
+      >
+        <h1 class="w-[10%]">01</h1>
+        <div class="w-[60%]">
+          <h1>Billboard</h1>
+          <div class="flex flex-col items-start gap-5">
+            <p class="pr-28">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              dolor quam, placerat sit amet eros quis, scelerisque lobortis
+              diam. Duis tincidunt interdum tortor, non fringilla mauris
+              molestie at
+            </p>
+            <AppButtonPrimary label="Pelajari lebih lanjut" />
+          </div>
+        </div>
+        <div class="w-[30%] h-full flex justify-end items-center pr-0">
+          <img src="/img/bus1.jpg" class="rounded-3xl object-cover h-[200px]" />
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="p-10 bg-JH-blue text-white rounded-3xl">
+        <h1>Lihat Portofolio Project Kami</h1>
+        <div class="flex">
+          <img
+            src="/img/bus1.jpg"
+            class="w-1/2 h-[300px] object-cover rounded-3xl"
+          />
+          <div class="w-1/2 p-10 h-[300px] flex flex-col gap-10 items-start">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              dolor quam, placerat sit ame Ada LIght Vehicle ada Bus
+              blabalbalbalballa
+            </p>
+            <AppButtonPrimary label="Pelajari lebih lanjut" />
+            <div class="flex gap-3">
+              <div
+                v-for="(item, index) in Jhensen"
+                class="flex flex-col justify-center items-center"
+              >
+                <h1 class="md:text-5xl">{{ item.value }}</h1>
+                <p class="md:text-base text-xs">{{ item.desc }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -69,18 +71,25 @@
 export default {
   data() {
     return {
-      items: [
+      Jhensen: [
+        { value: "50+", desc: "Project Done" },
+        { value: "100+", desc: "Project Done" },
+        { value: "5+", desc: "Project Done" },
+        { value: "5+", desc: "Project Done" },
+      ],
+      isHover: false,
+      services: [
         {
-          slot: "tentang",
-          label: "Tentang perusahaan",
+          no: "01",
+          title: "Billboard",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulladolor quam, placerat sit amet eros quis, scelerisque lobortis diam. Duis tincidunt interdum tortor, non fringilla maurismolestie at",
         },
         {
-          slot: "struktur",
-          label: "Struktur Layanan",
-        },
-        {
-          slot: "sertifikasi",
-          label: "Sertifikasi",
+          no: "02",
+          title: "Billboard",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulladolor quam, placerat sit amet eros quis, scelerisque lobortis diam. Duis tincidunt interdum tortor, non fringilla maurismolestie at",
         },
       ],
     };
