@@ -1,6 +1,8 @@
 <template>
   <AppNavbar />
-  <slot />
+  <main>
+    <slot />
+  </main>
   <section class="container">
     <AppBannerFooter />
   </section>

@@ -22,10 +22,22 @@
 
       <div
         id="navbar"
-        class="triangle text-white px-16 w-full h-[40%] bg-JH-black flex items-center gap-20 text-sm"
+        class="text-white px-16 w-full h-[40%] bg-JH-black flex items-center gap-20 text-sm"
       >
         <div v-for="(menu, index) in navMenu">
-          <NuxtLink :to="menu.path">{{ menu.title }}</NuxtLink>
+          <NuxtLink v-if="menu.submenu.length == 0" :to="menu.path">{{
+            menu.title
+          }}</NuxtLink>
+          <UDropdown
+            v-else
+            :items="menu.submenu"
+            :popper="{ placement: 'bottom-start' }"
+          >
+            <NuxtLink to="">{{ menu.title }}</NuxtLink>
+            <template #item="{ item }">
+              <NuxtLink :to="item.path">{{ item.label }}</NuxtLink>
+            </template>
+          </UDropdown>
         </div>
       </div>
     </div>

@@ -1,31 +1,25 @@
 <template>
   <section class="bg-JH-black text-white">
-    <div class="flex container items-center h-[90vh]">
-      <div class="md:w-1/2 flex flex-col items-start gap-4">
-        About Company
+    <div class="flex items-center h-[90vh] pr-0">
+      <div class="md:w-1/2 flex flex-col items-start gap-4 px-24">
+        Tentang Perusahaan
         <h1 class="text-5xl font-semibold">
           Kami Menyediakan Layanan Transportasi dan Periklanan
         </h1>
         <AppButtonPrimary label="Pelajari lebih lanjut" />
       </div>
-      <!-- <div
-        id="picture"
-        class="md:w-1/2 flex items-end justify-end md:gap-12 gap-5"
-      >
+      <div class="h-full w-1/2 relative">
         <NuxtImg
           src="/img/bus.png"
-          height="1000"
-          width="700"
-          class="rounded-xl"
+          class="rounded-t-xl absolute bottom-0 left-5 h-[80%] object-cover"
           format="webp"
         />
         <NuxtImg
-          src="img/bus.png"
-          height="241"
-          class="rounded-xl"
+          src="/img/bus.png"
+          class="rounded-tl-xl absolute bottom-0 right-0 h-[60%] object-cover"
           format="webp"
         />
-      </div> -->
+      </div>
     </div>
   </section>
 </template>

@@ -18,8 +18,8 @@
         }"
         class="flex flex-col justify-center items-center"
       >
-        <template #tentang> <PortofolioAdvertising /> </template>
-        <template #struktur> <PerusahaanTentangLayanan /></template>
+        <template #transportation> <PortofolioTransportation /> </template>
+        <template #advertising> <PortofolioAdvertising /></template>
       </UTabs>
     </section>
   </main>
@@ -30,12 +30,12 @@ export default {
     return {
       items: [
         {
-          slot: "tentang",
-          label: "Tentang perusahaan",
+          slot: "transportation",
+          label: "Transportation",
         },
         {
-          slot: "struktur",
-          label: "Struktur Layanan",
+          slot: "advertising",
+          label: "Advertising",
         },
       ],
     };

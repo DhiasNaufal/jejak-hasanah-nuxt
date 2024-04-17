@@ -1,0 +1,1 @@
+<template>Testimony Card</template>

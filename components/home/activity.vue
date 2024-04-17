@@ -28,9 +28,9 @@
       </div>
       <div id="Text" class="md:w-1/2 relative">
         <div class="flex flex-col items-start">
-          <p>About us</p>
+          <p>Tentang Kami</p>
           <h1 class="text-4xl font-extrabold font-dms text-JH-blue">
-            See Our Works Activity
+            PT. Jejak Hasanah
           </h1>
           <p class="font-thin pt-3 pb-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
@@ -41,8 +41,9 @@
             consectetur elit. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit.
           </p>
-          <!-- <ButtonPrimary class="flex" /> -->
-          <AppButtonPrimary label="Pelajari lebih lanjut" />
+          <NuxtLink to="/tentang">
+            <AppButtonPrimary label="Pelajari lebih lanjut" />
+          </NuxtLink>
         </div>
         <NuxtImg
           src="img/logo-shade.png"
