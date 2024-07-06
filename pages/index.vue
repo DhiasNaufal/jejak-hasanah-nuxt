@@ -6,18 +6,19 @@
   <section id="client">
     <HomeClient />
   </section>
+  <UContainer>
+    <main>
+      <!-- Works Activity -->
+      <HomeActivity />
 
-  <main class="container">
-    <!-- Works Activity -->
-    <HomeActivity />
+      <!-- Services -->
+      <HomeServices />
 
-    <!-- Services -->
-    <HomeServices />
+      <!-- Why Choose Us -->
+      <HomeWhy />
 
-    <!-- Why Choose Us -->
-    <HomeWhy />
-
-    <!-- Portofolio -->
-    <HomePortfolio />
-  </main>
+      <!-- Portofolio -->
+      <HomePortfolio />
+    </main>
+  </UContainer>
 </template>
