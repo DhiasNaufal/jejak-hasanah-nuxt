@@ -1,4 +1,4 @@
-import { JHLightColors } from "./app/constants/colors";
+import { JHLightTheme } from "~/app/constant/colors";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,9 +12,9 @@ export default {
   theme: {
     extend: {
       presets: {
-        "my-heading": ["font-bold", "text-3xl", "text-blue-700"], // Example classes
+        "my-heading": ["font-bold", "text-3xl", "text-blue-700"],
       },
-      colors: { ...JHLightColors },
+      colors: { primary: "#2F318B" },
       // colors: {
       //   JBlue: {
       //     50: "#eef3ff",
@@ -50,9 +50,10 @@ export default {
       //   },
       // },
       fontFamily: {
-        dms: ['"Open Sans", sans-serif'],
-        dsp: ['"Fugaz One", sans-serif'],
-        sans: ['"Open Sans", sans-serif'],
+        sans: ["Open Sans", "Inter", "ui-sans-serif", "system-ui"],
+        // dms: ['"Open Sans", sans-serif'],
+        fugaz: ["Fugaz One", "Inter", "ui-sans-serif", "system-ui"],
+        // sans: ['"Open Sans", sans-serif'],
       },
     },
   },
