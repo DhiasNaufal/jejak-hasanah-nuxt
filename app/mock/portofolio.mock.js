@@ -21,9 +21,6 @@ export default {
       desc2:
         "Medan tambang nikel yang terdiri dari tanah merah menimbulkan tantangan khusus karena tanah yang menempel dapat menyebabkan kerusakan spare part kendaraan. Kami mengatasi masalah ini dengan lebih sering mencuci kendaraan untuk mencegah penumpukan kotoran yang merusak spare part. Meskipun site ini masih baru dan belum mencatat pencapaian khusus, kami tetap berkomitmen memberikan yang terbaik dan mencapai kesuksesan di masa mendatang.",
     },
-    { title: "", desc1: "", desc2: "" },
-    { title: "", desc1: "", desc2: "" },
-    { title: "", desc1: "", desc2: "" },
   ],
   advertising: {
     title:

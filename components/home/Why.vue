@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16">
+  <v-container class="py-16">
     <div class="flex flex-col text-center items-center pb-16 gap-3">
       <h1 :class="styling.title">Why Choose Us?</h1>
       <p class="text-lg text-neutral-500 md:w-3/5">
@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </v-container>
 </template>
 <script>
 export default {
