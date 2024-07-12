@@ -4,11 +4,11 @@
       <v-col class="flex items-end">
         <v-img
           src="public/img/home/act1.png"
-          class="rounded-xl 2xl:h-[558px] h-[358px]"
+          class="rounded-xl 2xl:h-[558px] xl:h-[358px]"
         />
         <v-img
           src="public/img/home/act2.png"
-          class="rounded-xl 2xl:h-[458px] h-[258px]"
+          class="rounded-xl 2xl:h-[458px] xl:h-[258px]"
         />
       </v-col>
       <v-col>

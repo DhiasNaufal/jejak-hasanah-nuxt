@@ -2,14 +2,15 @@
   <LandingViewHero />
 
   <AppSectionBackgroundLogo>
-    <LandingViewActivity />
-  </AppSectionBackgroundLogo>
-
-  <AppSectionBackgroundLogo2>
     <LandingViewServices class="my-14" />
-  </AppSectionBackgroundLogo2>
+  </AppSectionBackgroundLogo>
+  <!-- <AppSectionBackgroundLogo>
+    <LandingViewActivity />
+  </AppSectionBackgroundLogo> -->
 
-  <LandingViewSellingPoint />
+  <LandingViewSellingPoint class="my-24" />
+  <LandingViewPortfolio />
+
   <!-- <HomeWhy /> -->
 
   <!-- <HomeActivity /> -->
@@ -18,6 +19,5 @@
     <HomeServices />
 
 
-    <HomePortfolio /> 
-</main>
+  </main>
 --></template>

@@ -5,16 +5,17 @@
       :style="img"
     >
       <div
-        class="bg-primary absolute -right-5 top-1/3 h-14 w-14 flex items-center justify-center text-3xl font-extrabold italic rounded-md"
+        class="bg-secondary absolute -right-5 top-1/3 h-14 w-14 flex items-center justify-center text-3xl font-extrabold italic rounded-md"
       >
         {{ number }}
       </div>
     </div>
-    <div class="w-1/2">
-      <AppTextH5>{{ title }}</AppTextH5>
+    <div class="w-1/2 flex flex-col gap-2 items-start">
+      <AppTextH5 class="text-text">{{ title }}</AppTextH5>
       <p>
         {{ desc }}
       </p>
+      <v-btn variant="outlined" color="primary">Lihat Detail</v-btn>
     </div>
   </div>
 </template>
