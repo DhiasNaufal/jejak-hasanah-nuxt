@@ -8,11 +8,12 @@
     </div>
     <v-carousel show-arrows="hover" hide-delimiters>
       <v-carousel-item v-for="(item, index) in 5">
-        <v-sheet height="100%">
-          <div class="d-flex fill-height justify-center align-center">
-            <div class="text-h2 bg-black h-5/6 w-2/3">Slide</div>
-          </div>
-        </v-sheet>
+        <NuxtLink
+          to="/transportation"
+          class="flex fill-height justify-center align-center"
+        >
+          <AppCardPortofolioShort class="hover:scale-105 transition-all" />
+        </NuxtLink>
       </v-carousel-item>
     </v-carousel>
   </v-container>

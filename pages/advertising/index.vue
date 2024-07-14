@@ -1,73 +1,47 @@
 <template>
-  <AppHero />
-  <main class="container">
-    <section class="py-16">
-      <div class="flex justify-between">
-        <h1 class="font-bold animate-fade-down w-1/3">
-          Layanan Pengiklanan Kami
-        </h1>
-        <p class="text-end w-1/3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
-          quam, placerat sit amet eros quis,
-        </p>
-      </div>
-      <section>
-        <div
-          v-for="item in services"
-          class="w-full flex items-start duration-500 bg-neutral-100 hover:bg-JH-blue hover:scale-105 hover:text-white px-12 py-6 rounded-3xl mb-1"
-          @mouseover="isHover = true"
-          @mouseleave="isHover = false"
-        >
-          <h1 class="w-[10%]">01</h1>
-          <div class="w-[60%]">
-            <h1>Billboard</h1>
-            <div class="flex flex-col items-start gap-5">
-              <!-- :class="{
-                hidden: !isHover,
-                'block animate-fade-down animate-duration-500': isHover,
-              }" -->
-              <p class="pr-28">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                dolor quam, placerat sit amet eros quis, scelerisque lobortis
-                diam. Duis tincidunt interdum tortor, non fringilla mauris
-                molestie at
-              </p>
-              <AppButtonPrimary label="Pelajari lebih lanjut" />
-            </div>
-          </div>
-          <div class="w-[30%] h-full flex justify-end items-center">
-            <NuxtImg
-              src="img/bus1.jpg"
-              width="230"
-              height="100"
-              class="rounded-3xl hover:scale-110"
-            />
-          </div>
-        </div>
-      </section>
-    </section>
-  </main>
+  <AppHeroImage class="h-[60vh]" :img="heroimg">
+    <v-container class="h-full">
+      <v-row align="center" justify="center" class="h-full">
+        <v-col justify="center" algin="center">
+          <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
+          <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
+          <v-btn class="my-3" color="secondary">Pelajari lebih lanjut</v-btn>
+        </v-col>
+        <v-col></v-col>
+      </v-row>
+    </v-container>
+  </AppHeroImage>
+
+  <v-container class="my-10">
+    <v-row justify="center">
+      <AppTextH2>Layanan Advertising</AppTextH2>
+      <p class="text-center">
+        Jejak Hasanah menyediakan layanan advertising yang beragam, meliputi
+        billboard, videotron, mini display, dan café branding.
+      </p>
+    </v-row>
+  </v-container>
+
+  <!-- <AppSectionExpandedRow /> -->
+
+  <AppSectionSellingPoint
+    title="Pelayanan Tambahan"
+    subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"
+    :items="sellingPointMock.ads"
+  />
+  <AppCardPortfolio />
 </template>
-<script>
-export default {
-  data() {
-    return {
-      isHover: false,
-      services: [
-        {
-          no: "01",
-          title: "Billboard",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulladolor quam, placerat sit amet eros quis, scelerisque lobortis diam. Duis tincidunt interdum tortor, non fringilla maurismolestie at",
-        },
-        {
-          no: "02",
-          title: "Billboard",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulladolor quam, placerat sit amet eros quis, scelerisque lobortis diam. Duis tincidunt interdum tortor, non fringilla maurismolestie at",
-        },
-      ],
-    };
-  },
-};
+<script lang="ts" setup>
+import sellingPointMock from "~/app/mock/sellingPoint.mock";
+const heroimg = "background-image: url('/img/service/ads_hero.png')";
+const items = [
+  { value: "50+", desc: "Customer" },
+  { value: "98%", desc: "Kepuasan Pelanggan" },
+  { value: "75+", desc: "Proyek dikerjakan" },
+];
 </script>
+<style>
+.test {
+  filter: drop-shadow(7px 10px 0px #d82624);
+}
+</style>
