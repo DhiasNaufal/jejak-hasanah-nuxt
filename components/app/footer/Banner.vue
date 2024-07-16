@@ -11,8 +11,8 @@
           Hubungi kami untuk obrolan lebih lanjut
         </h1>
         <div class="flex gap-3">
-          <v-btn color="secondary">Hubungi</v-btn>
-          <v-btn color="secondary">Hubungi</v-btn>
+          <AppButtonPrimary>Hubungi</AppButtonPrimary>
+          <AppButtonPrimary>Hubungi</AppButtonPrimary>
         </div>
       </div>
     </section>

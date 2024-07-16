@@ -1,15 +1,5 @@
 <template>
-  <UButton color="red" class="rounded-full py-3 px-6" size="lg">
-    {{ label }}
-  </UButton>
+  <v-btn color="secondary" class="rounded-xl my-3">
+    <slot />
+  </v-btn>
 </template>
-<script>
-export default {
-  props: {
-    label: {
-      type: String,
-      default: "Primary",
-    },
-  },
-};
-</script>

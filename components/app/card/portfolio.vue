@@ -17,8 +17,8 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
             quam, placerat sit ame Ada LIght Vehicle ada Bus blabalbalbalballa
           </p>
-          <v-btn color="secondary" class="rounded-xl my-5"
-            >Lihat Portofolio Kami</v-btn
+          <AppButtonPrimary class="my-4"
+            >Lihat Portofolio Kami</AppButtonPrimary
           >
           <AppValue :items="items" />
         </v-col>

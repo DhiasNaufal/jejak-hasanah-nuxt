@@ -1,8 +1,7 @@
 <template>
   <NuxtLayout name="404">
-    <div>
-      <div class="text-4xl">You've Arrived Here on Error, boss</div>
-      <button class="font-bold button" @click="goBack">Back</button>
+    <div class="h-[100vh] bg-black">
+      <v-img src="public/img/404.png"></v-img>
     </div>
   </NuxtLayout>
 </template>

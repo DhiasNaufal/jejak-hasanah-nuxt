@@ -5,7 +5,7 @@
         <v-col justify="center" algin="center">
           <AppTextH2 class="text-white">Layanan Kendaraan</AppTextH2>
           <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
-          <v-btn class="my-3" color="secondary">Pelajari lebih lanjut</v-btn>
+          <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
         </v-col>
         <v-col></v-col>
       </v-row>
