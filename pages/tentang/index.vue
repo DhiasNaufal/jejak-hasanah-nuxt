@@ -14,15 +14,20 @@
     </v-container>
   </AppHeroImage>
   <v-container>
+    <v-row>
+      <v-col align="center">
+        <TentangTabs />
+      </v-col>
+    </v-row>
     <v-row justify="center" class="mt-4 mb-4">
-      <AppTextH2 id="layanan">Layanan Kendaraan</AppTextH2>
-      <p class="text-center">
-        Jejak Hasanah bangga menawarkan berbagai jenis kendaraan untuk memenuhi
-        kebutuhan transportasi perusahaan di segala sektor. Kami menyediakan
-        Bus, Minibus, Light Vehicle (LV), dan SUV dengan spesifikasi yang dapat
-        disesuaikan serta layanan premium untuk memastikan kelancaran
-        operasional.
-      </p>
+      <v-col cols="12" align="center">
+        <AppTextH2 id="layanan">Sejarah Perusahaan</AppTextH2>
+      </v-col>
+      <v-col>
+        <p class="text-center">
+          Perjalanan kami dimotivasi untuk menjadi perusahaan yang xxx & xxxx
+        </p>
+      </v-col>
     </v-row>
     <v-timeline align="start">
       <v-timeline-item
@@ -48,14 +53,18 @@
       </v-timeline-item>
     </v-timeline>
     <v-row justify="center" class="mt-4 mb-4">
-      <AppTextH2 id="layanan">Layanan Kendaraan</AppTextH2>
-      <p class="text-center">
-        Jejak Hasanah bangga menawarkan berbagai jenis kendaraan untuk memenuhi
-        kebutuhan transportasi perusahaan di segala sektor. Kami menyediakan
-        Bus, Minibus, Light Vehicle (LV), dan SUV dengan spesifikasi yang dapat
-        disesuaikan serta layanan premium untuk memastikan kelancaran
-        operasional.
-      </p>
+      <v-col cols="12" align="center">
+        <AppTextH2 id="layanan"
+          >Tetap Teguh dalam Membangun Negeri...</AppTextH2
+        >
+      </v-col>
+      <v-col>
+        <p class="text-center">
+          Jejak Hasanah akan selalu berkarya dalam pembangunan Indonesia dengan
+          mengedepankan 3 pilar “Amanah”, “Hasanah”, dan “Alhamdulillah” demi
+          Indonesia Maju.
+        </p>
+      </v-col>
     </v-row>
   </v-container>
 </template>

@@ -7,7 +7,7 @@
       v-for="(item, index) in items"
       :key="index"
     >
-      <AppTextH2>{{ item.value }}</AppTextH2>
+      <AppTextH2 class="text-white">{{ item.value }}</AppTextH2>
       <p>{{ item.desc }}</p>
     </div>
   </div>
