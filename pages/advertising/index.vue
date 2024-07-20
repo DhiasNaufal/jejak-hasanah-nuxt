@@ -20,9 +20,14 @@
         billboard, videotron, mini display, dan café branding.
       </p>
     </v-row>
+    <v-row class="mt-10">
+      <div class="w-full flex justify-center">
+        <div class="grid grid-cols-2 gap-x-10 gap-y-10">
+          <AppCardService v-for="i in 4" class="" />
+        </div>
+      </div>
+    </v-row>
   </v-container>
-
-  <!-- <AppSectionExpandedRow /> -->
 
   <AppSectionSellingPoint
     title="Pelayanan Tambahan"

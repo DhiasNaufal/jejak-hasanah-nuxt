@@ -5,7 +5,9 @@
         <v-col justify="center" algin="center">
           <AppTextH2 class="text-white">Layanan Kendaraan</AppTextH2>
           <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
-          <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
+          <NuxtLink to="#layanan">
+            <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
+          </NuxtLink>
         </v-col>
         <v-col></v-col>
       </v-row>
@@ -13,7 +15,7 @@
   </AppHeroImage>
   <v-container class="my-10">
     <v-row justify="center">
-      <AppTextH2>Layanan Kendaraan</AppTextH2>
+      <AppTextH2 id="layanan">Layanan Kendaraan</AppTextH2>
       <p class="text-center">
         Jejak Hasanah bangga menawarkan berbagai jenis kendaraan untuk memenuhi
         kebutuhan transportasi perusahaan di segala sektor. Kami menyediakan
@@ -21,6 +23,14 @@
         disesuaikan serta layanan premium untuk memastikan kelancaran
         operasional.
       </p>
+    </v-row>
+
+    <v-row class="mt-10">
+      <div class="w-full flex justify-center">
+        <div class="grid grid-cols-2 gap-x-10 gap-y-10">
+          <AppCardService v-for="i in 4" class="" />
+        </div>
+      </div>
     </v-row>
   </v-container>
 

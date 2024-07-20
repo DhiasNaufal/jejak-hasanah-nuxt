@@ -1,4 +1,5 @@
-<template>
+<template>ss</template>
+<!-- <template>
   <section>
     <div class="flex flex-col items-center justify-center">
       <h1>Jejak Hasanah Advertising</h1>
@@ -61,4 +62,4 @@ export default {
     };
   },
 };
-</script>
+</script> -->

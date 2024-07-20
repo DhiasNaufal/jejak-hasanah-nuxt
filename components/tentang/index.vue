@@ -1,5 +1,5 @@
 <template>
-  <div
+  <!-- <div
     class="flex justify-evenly items-center bg-neutral-100 rounded-2xl py-24"
   >
     <div class="md:w-1/2 flex flex-col items-start gap-3">
@@ -12,5 +12,5 @@
       <AppButtonPrimary label="Pelajari Lebih Lanjut" />
     </div>
     <NuxtImg src="/img/logo/JH-Logo.svg" width="200" />
-  </div>
+  </div> -->
 </template>

@@ -25,7 +25,31 @@
         class="triangle text-white px-16 w-full h-[40%] bg-black flex items-center gap-20 text-sm"
       >
         <div v-for="(menu, index) in navMenu">
-          <NuxtLink :to="menu.path">{{ menu.title }}</NuxtLink>
+          <NuxtLink v-if="typeof menu.path == 'string'" :to="menu.path">
+            <v-btn variant="text" class="text-subtitle-1 font-sans">
+              {{ menu.title }}
+            </v-btn>
+          </NuxtLink>
+          <v-btn v-else variant="text" class="text-subtitle-1 font-sans">
+            {{ menu.title }}
+            <template v-slot:append>
+              <v-icon> mdi-chevron-down</v-icon>
+            </template>
+
+            <v-menu activator="parent" class="">
+              <v-list class="bg-text">
+                <v-list-item
+                  v-for="(item, index) in menu.path"
+                  :key="index"
+                  :value="index"
+                >
+                  <NuxtLink :to="item.path">
+                    <v-list-item-title>{{ item.title }}</v-list-item-title>
+                  </NuxtLink>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+          </v-btn>
         </div>
       </div>
     </div>

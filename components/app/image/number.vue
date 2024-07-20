@@ -15,7 +15,9 @@
       <p>
         {{ desc }}
       </p>
-      <v-btn variant="outlined" color="primary">Lihat Detail</v-btn>
+      <NuxtLink :to="path">
+        <v-btn variant="outlined" color="primary">Lihat Detail</v-btn>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -38,6 +40,10 @@ export default {
       type: String,
       default:
         "   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor quam, placerat sit amet eros quis, scelerisque lobortis diam.",
+    },
+    path: {
+      type: String,
+      default: "/",
     },
   },
 };

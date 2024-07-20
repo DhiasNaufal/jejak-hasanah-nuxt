@@ -21,20 +21,13 @@
             <p>Our Services</p>
             <AppTextH2>We Provide Innovation</AppTextH2>
           </v-col>
-          <v-col cols="12">
+          <v-col v-for="service in services" cols="12">
             <AppImageNumber
-              img="background-image: url('/img/home/lv.jpeg')"
-              title="Transportasi"
-              number="1"
-              desc="Jejak Hasanah menyediakan Bus, Minibus, LV, dan SUV dengan spesifikasi yang dapat disesuaikan serta layanan premium untuk berbagai kebutuhan transportasi perusahaan."
-            />
-          </v-col>
-          <v-col cols="12">
-            <AppImageNumber
-              img="background-image: url('/img/home/vtrn.png')"
-              title="Advertising"
-              number="2"
-              desc="Jejak Hasanah menyediakan layanan advertising, seperti billboard, videotron, mini display, dan café branding, dengan solusi yang efektif dan inovatif."
+              :img="service.image"
+              :title="service.title"
+              :number="service.id"
+              :desc="service.desc"
+              :path="service.path"
             />
           </v-col>
         </v-row>
@@ -43,5 +36,20 @@
   </v-container>
 </template>
 <script lang="ts" setup>
-const corousel = [];
+const services = [
+  {
+    id: "1",
+    image: "background-image: url('/img/home/lv.jpeg')",
+    title: "Transportation",
+    desc: "Jejak Hasanah menyediakan Bus, Minibus, LV, dan SUV dengan spesifikasi yang dapat disesuaikan serta layanan premium untuk berbagai kebutuhan transportasi perusahaan.",
+    path: "/transportation",
+  },
+  {
+    id: "2",
+    image: "background-image: url('/img/home/vtrn.png')",
+    title: "Advertising",
+    desc: "Jejak Hasanah menyediakan layanan advertising, seperti billboard, videotron, mini display, dan café branding, dengan solusi yang efektif dan inovatif.",
+    path: "/advertising",
+  },
+];
 </script>

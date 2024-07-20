@@ -10,7 +10,16 @@ export default {
     },
     {
       title: "Layanan",
-      path: "/layanan",
+      path: [
+        {
+          title: "Transportation",
+          path: "/transportation",
+        },
+        {
+          title: "Advertising",
+          path: "/advertising",
+        },
+      ],
     },
     {
       title: "Portofolio",
