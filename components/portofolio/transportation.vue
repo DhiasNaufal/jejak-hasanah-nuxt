@@ -3,7 +3,7 @@
     <div class="w-full flex justify-center">
       <div class="grid grid-cols-3 gap-x-10 gap-y-10">
         <AppCardService
-          v-for="porto in advertising"
+          v-for="porto in transportasi"
           :title="porto.title"
           :path="`/portofolio/${porto.title}`"
         />
@@ -13,5 +13,5 @@
 </template>
 <script lang="ts" setup>
 import portofolioMock from "~/app/mock/portofolio.mock";
-const advertising = portofolioMock.advertising.variant;
+const transportasi = portofolioMock.transportasi;
 </script>

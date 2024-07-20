@@ -8,6 +8,17 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
   image: {
+    presets: {
+      cover: {
+        modifiers: {
+          fit: "cover",
+          format: "webp",
+          width: 300,
+          height: 200,
+        },
+      },
+    },
+
     format: ["webp"],
   },
   devtools: { enabled: true },

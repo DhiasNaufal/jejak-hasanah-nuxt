@@ -22,8 +22,13 @@
     </v-row>
     <v-row class="mt-10">
       <div class="w-full flex justify-center">
-        <div class="grid grid-cols-2 gap-x-10 gap-y-10">
-          <AppCardService v-for="i in 4" class="" />
+        <div class="grid grid-cols-3 gap-x-10 gap-y-10">
+          <AppCardService
+            v-for="service in advertising"
+            :title="service.name"
+            :desc="service.desc"
+            :path="`/advertising/${service.name}`"
+          />
         </div>
       </div>
     </v-row>
@@ -34,16 +39,14 @@
     subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"
     :items="sellingPointMock.ads"
   />
-  <AppCardPortfolio />
+  <AppCardPortfolio :desc="portofolio" path="/portofolio" />
 </template>
 <script lang="ts" setup>
 import sellingPointMock from "~/app/mock/sellingPoint.mock";
+import layananMock from "~/app/mock/layanan.mock";
 const heroimg = "background-image: url('/img/service/ads_hero.png')";
-const items = [
-  { value: "50+", desc: "Customer" },
-  { value: "98%", desc: "Kepuasan Pelanggan" },
-  { value: "75+", desc: "Proyek dikerjakan" },
-];
+const advertising = layananMock.advertising.variant;
+const portofolio = layananMock.advertising.desc;
 </script>
 <style>
 .test {

@@ -1,5 +1,5 @@
 export default {
-  transportasio: [
+  transportasi: [
     {
       title: "Site Kalimantan Selatan",
       desc1:

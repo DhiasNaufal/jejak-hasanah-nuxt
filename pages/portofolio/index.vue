@@ -13,6 +13,21 @@
       </v-row>
     </v-container>
   </AppHeroImage>
+  <v-row justify="center" class="mt-4 mb-4">
+    <v-col cols="12" align="center">
+      <AppTextH2 id="layanan">Jejak Hasanah Project</AppTextH2>
+    </v-col>
+    <v-col>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
+        quam, placerat sit amet eros quis, scelerisque lobortis diam. Duis
+        tincidunt
+      </p>
+    </v-col>
+  </v-row>
+  <v-container>
+    <PortofolioTabs />
+  </v-container>
 </template>
 <script>
 export default {

@@ -17,18 +17,19 @@
     <v-row justify="center">
       <AppTextH2 id="layanan">Layanan Kendaraan</AppTextH2>
       <p class="text-center">
-        Jejak Hasanah bangga menawarkan berbagai jenis kendaraan untuk memenuhi
-        kebutuhan transportasi perusahaan di segala sektor. Kami menyediakan
-        Bus, Minibus, Light Vehicle (LV), dan SUV dengan spesifikasi yang dapat
-        disesuaikan serta layanan premium untuk memastikan kelancaran
-        operasional.
+        {{ portofolio }}
       </p>
     </v-row>
 
     <v-row class="mt-10">
       <div class="w-full flex justify-center">
         <div class="grid grid-cols-2 gap-x-10 gap-y-10">
-          <AppCardService v-for="i in 4" class="" />
+          <AppCardService
+            v-for="service in transportation"
+            :title="service.name"
+            :desc="service.desc"
+            :path="`/transportation/${service.name}`"
+          />
         </div>
       </div>
     </v-row>
@@ -39,11 +40,14 @@
     subtitle="Kami berkomitmen untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri. "
     :items="sellingPointMock.transport"
   />
-  <AppCardPortfolio />
+  <AppCardPortfolio :desc="portofolio" path="/portofolio" />
 </template>
 <script lang="ts" setup>
 import sellingPointMock from "~/app/mock/sellingPoint.mock";
+import layananMock from "~/app/mock/layanan.mock";
 const heroimg = "background-image: url('/img/service/transport_hero.png')";
+const transportation = layananMock.transportation.variant;
+const portofolio = layananMock.transportation.desc;
 </script>
 <style>
 .test {

@@ -14,12 +14,13 @@
         </v-col>
         <v-col align="start" justify="between">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor
-            quam, placerat sit ame Ada LIght Vehicle ada Bus blabalbalbalballa
+            {{ desc }}
           </p>
-          <AppButtonPrimary class="my-4"
-            >Lihat Portofolio Kami</AppButtonPrimary
-          >
+          <NuxtLink :to="path">
+            <AppButtonPrimary class="my-4">
+              Lihat Portofolio Kami
+            </AppButtonPrimary>
+          </NuxtLink>
           <AppValue :items="items" />
         </v-col>
       </v-row>
@@ -32,4 +33,18 @@ const items = [
   { value: "98%", desc: "Kepuasan Pelanggan" },
   { value: "75+", desc: "Proyek dikerjakan" },
 ];
+defineProps({
+  imgPath: {
+    type: String,
+    default: "/img/home/footerBanner.jpeg",
+  },
+  desc: {
+    type: String,
+    default: "desc",
+  },
+  path: {
+    type: String,
+    default: "/",
+  },
+});
 </script>

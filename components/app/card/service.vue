@@ -1,25 +1,36 @@
 <template>
-  <v-card class="mx-auto" max-width="400">
-    <v-img
-      class="align-end text-white"
-      height="200"
-      src="public/img/home/footerBanner.jpeg"
-      cover
-    >
-    </v-img>
-    <v-card-title>Top 10 Australian beaches</v-card-title>
-    <v-card-subtitle> Number 10 </v-card-subtitle>
-    <!-- 
-    <v-card-text>
-      <div>Whitehaven Beach</div>
-
-      <div>Whitsunday Island, Whitsunday Islands</div>
-    </v-card-text> -->
-
+  <v-card class="mx-auto bg-text" width="300">
+    <img class="align-end text-white object-cover h-[200px] w-[300px]"  :src="imgPath" cover>
+    </img>
+    <v-card-title>{{ title }}</v-card-title>
+    <v-card-subtitle>{{ desc }} </v-card-subtitle>
     <v-card-actions>
-      <v-btn color="orange" text="Share"></v-btn>
-
-      <v-btn color="orange" text="Explore"></v-btn>
+      <NuxtLink>
+        <v-btn color="white" text="Share"></v-btn>
+      </NuxtLink>
+      <NuxtLink :to="path">
+        <v-btn color="white" text="Explore"></v-btn>
+      </NuxtLink>
     </v-card-actions>
   </v-card>
 </template>
+<script lang="ts" setup>
+defineProps({
+  imgPath: {
+    type: String,
+    default: "/img/home/footerBanner.jpeg",
+  },
+  title: {
+    type: String,
+    default: "title",
+  },
+  desc: {
+    type: String,
+    default: "desc",
+  },
+  path: {
+    type: String,
+    default: "/",
+  },
+});
+</script>
