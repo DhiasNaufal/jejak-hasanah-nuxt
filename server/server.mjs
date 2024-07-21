@@ -580,7 +580,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: __nuxt_page_meta$6 == null ? void 0 : __nuxt_page_meta$6.redirect,
-    component: () => import("./_nuxt/index-Djs-LU1X.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-DlaxXu0E.js").then((m) => m.default || m)
   },
   {
     name: "advertising-portofolio",
@@ -628,7 +628,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect,
-    component: () => import("./_nuxt/index-DIEG2TJw.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-CExpv3K_.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -941,8 +941,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-BlkuzRyW.js").then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-D7bMUIHl.js").then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-COSlkmq-.js").then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-BQ2KWVLp.js").then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
