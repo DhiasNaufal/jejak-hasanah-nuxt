@@ -31,30 +31,39 @@ jobs:
       - name: Install lftp
         run: sudo apt-get install lftp
 
-      - name: Deploy to production
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USER: ${{ secrets.FTP_USER }}
-          FTP_PASS: ${{ secrets.FTP_PASS }}
-        run: |
-          lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_SERVER; mirror -R .nuxt /public_html/"
+      - name: Deploy to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          remote-dir: public_html
+          local-dir: dist
 
-      - name: Verify deployment
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USER: ${{ secrets.FTP_USER }}
-          FTP_PASS: ${{ secrets.FTP_PASS }}
-        run: |
-          lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_SERVER; ls /public_html/"
+      # - name: Deploy to production
+      #   env:
+      #     FTP_SERVER: ${{ secrets.FTP_SERVER }}
+      #     FTP_USER: ${{ secrets.FTP_USER }}
+      #     FTP_PASS: ${{ secrets.FTP_PASS }}
+      #   run: |
+      #     lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_SERVER; mirror -R .nuxt /public_html/"
 
-        # - name: Verify build output
-        #   run: ls -la .nuxt/dist
+      # - name: Verify deployment
+      #   env:
+      #     FTP_SERVER: ${{ secrets.FTP_SERVER }}
+      #     FTP_USER: ${{ secrets.FTP_USER }}
+      #     FTP_PASS: ${{ secrets.FTP_PASS }}
+      #   run: |
+      #     lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_SERVER; ls /public_html/"
 
-        # - name: Push
-        #   uses: s0/git-publish-subdir-action@develop
-        #   env:
-        #     REPO: self
-        #     BRANCH: build
-        #     FOLDER: .nuxt/dist # The directory where your assets are generated
-        #     GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-        #     MESSAGE: "Build: ({sha}) {msg}" # The commit message
+      # - name: Verify build output
+      #   run: ls -la .nuxt/dist
+
+      # - name: Push
+      #   uses: s0/git-publish-subdir-action@develop
+      #   env:
+      #     REPO: self
+      #     BRANCH: build
+      #     FOLDER: .nuxt/dist # The directory where your assets are generated
+      #     GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+      #     MESSAGE: "Build: ({sha}) {msg}" # The commit message
