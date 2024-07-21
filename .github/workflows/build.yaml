@@ -28,14 +28,43 @@ jobs:
       - name: Verify build output
         run: ls -la .nuxt
 
-      - name: Deploy to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          remote-dir: public_html/
-          local-dir: .nuxt/
+      - name: Install lftp
+        run: sudo apt-get install lftp
+
+      - name: Verify secrets
+        run: |
+          echo "FTP_SERVER: ${{ secrets.FTP_SERVER }}"
+          echo "FTP_USER: ${{ secrets.FTP_USER }}"
+          echo "FTP_PASS: ${{ secrets.FTP_PASS }}"
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+
+      - name: Deploy to production
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: |
+          lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_SERVER; mirror -R .nuxt /public_html/"
+
+      - name: Verify deployment
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: |
+          lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_SERVER; ls /public_html/"
+
+      # - name: Deploy to Hostinger
+      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      #   with:
+      #     server: ${{ secrets.FTP_SERVER }}
+      #     username: ${{ secrets.FTP_USER }}
+      #     password: ${{ secrets.FTP_PASS }}
+      #     remote-dir: public_html/
+      #     local-dir: .nuxt/
 
       # - name: Deploy to production
       #   env:
