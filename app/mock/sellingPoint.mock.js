@@ -1,4 +1,24 @@
 export default {
+  jh: [
+    {
+      no: 1,
+      icon: "mdi-account-circle",
+      title: "Kualitas dan Keamanan Terjamin:",
+      desc: "Kami menyediakan layanan transportasi dengan kendaraan berkualitas tinggi dan man power terlatih, memastikan keselamatan dan keandalan di segala area",
+    },
+    {
+      no: 2,
+      icon: "mdi-account-circle",
+      title: "Diversivikasi Layanan",
+      desc: "Kami menawarkan berbagai layanan, termasuk transportasi dan periklanan outdoor, dengan fleksibilitas untuk memenuhi beragam kebutuhan klien.",
+    },
+    {
+      no: 3,
+      icon: "mdi-account-circle",
+      title: "Layanan Pelanggan yang Unggul",
+      desc: "Kami berkomitmen untuk memberikan layanan pelanggan yang terbaik dengan respons cepat dan solusi tepat waktu untuk kebutuhan dan masalah klien.",
+    },
+  ],
   ads: [
     {
       no: 1,
