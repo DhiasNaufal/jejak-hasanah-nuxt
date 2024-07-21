@@ -17,9 +17,7 @@
             {{ desc }}
           </p>
           <NuxtLink :to="path">
-            <AppButtonPrimary class="my-4">
-              Lihat Portofolio Kami
-            </AppButtonPrimary>
+            <AppButtonPrimary class="my-4"> Lihat Portofolio </AppButtonPrimary>
           </NuxtLink>
           <AppValue :items="items" />
         </v-col>
