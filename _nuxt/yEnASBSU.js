@@ -1,1 +1,0 @@
-import{f as e,o,c as n,r}from"./DnNSfI7X.js";const s={},c={class:"font-bold text-4xl text-primary"};function _(t,a){return o(),n("h2",c,[r(t.$slots,"default")])}const f=e(s,[["render",_]]);export{f as _};
