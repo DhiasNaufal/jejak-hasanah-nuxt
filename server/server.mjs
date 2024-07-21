@@ -941,8 +941,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-COSlkmq-.js").then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-BQ2KWVLp.js").then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-Bwa6wZky.js").then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-uz0e29mc.js").then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]

@@ -5,7 +5,7 @@ import "hookable";
 import { defuFn } from "defu";
 const inlineConfig = {
   "nuxt": {
-    "buildId": "317b8e16-f70b-4b28-ba9c-b6b4a826c57a"
+    "buildId": "c6ed9d50-32ff-4866-b822-3a4626bbd7c5"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -48,4 +48,4 @@ export {
   resolveIconName as r,
   useAppConfig as u
 };
-//# sourceMappingURL=index-B1LTuGY7.js.map
+//# sourceMappingURL=index-DLO9Fy8Q.js.map

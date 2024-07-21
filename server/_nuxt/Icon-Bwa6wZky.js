@@ -1,4 +1,4 @@
-import { u as useAppConfig, r as resolveIconName } from "./index-B1LTuGY7.js";
+import { u as useAppConfig, r as resolveIconName } from "./index-DLO9Fy8Q.js";
 import { af as useNuxtApp, J as _export_sfc } from "../server.mjs";
 import { toRef, isRef, defineComponent, watch, ref, computed, withAsyncContext, mergeProps, unref, createVNode, resolveDynamicComponent, useSSRContext } from "vue";
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderVNode, ssrRenderSlot, ssrInterpolate } from "vue/server-renderer";
@@ -171,4 +171,4 @@ const Icon = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-46c2e
 export {
   Icon as default
 };
-//# sourceMappingURL=Icon-COSlkmq-.js.map
+//# sourceMappingURL=Icon-Bwa6wZky.js.map

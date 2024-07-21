@@ -1,4 +1,4 @@
-import { u as useAppConfig, r as resolveIconName } from "./index-B1LTuGY7.js";
+import { u as useAppConfig, r as resolveIconName } from "./index-DLO9Fy8Q.js";
 import { defineComponent, computed, mergeProps, useSSRContext } from "vue";
 import { ssrRenderAttrs } from "vue/server-renderer";
 import { J as _export_sfc } from "../server.mjs";
@@ -84,4 +84,4 @@ const IconCSS = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-41
 export {
   IconCSS as default
 };
-//# sourceMappingURL=IconCSS-BQ2KWVLp.js.map
+//# sourceMappingURL=IconCSS-uz0e29mc.js.map
