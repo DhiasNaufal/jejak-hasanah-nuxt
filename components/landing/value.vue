@@ -18,7 +18,7 @@ export default {
     return {
       backgroundUrl: "/img/home/homeBanner.png",
       items: [
-        { value: "16+", desc: "Tahun Berdiri" },
+        { value: "19+", desc: "Tahun Berdiri" },
         { value: "98%", desc: "Kepuasan Pelanggan" },
         { value: "75+", desc: "Proyek dikerjakan" },
       ],
