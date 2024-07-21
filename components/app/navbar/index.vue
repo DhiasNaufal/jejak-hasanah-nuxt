@@ -38,15 +38,15 @@
 
             <v-menu activator="parent" class="">
               <v-list class="bg-text">
-                <v-list-item
+                <NuxtLink
                   v-for="(item, index) in menu.path"
                   :key="index"
-                  :value="index"
+                  :to="item.path"
                 >
-                  <NuxtLink :to="item.path">
+                  <v-list-item :value="index">
                     <v-list-item-title>{{ item.title }}</v-list-item-title>
-                  </NuxtLink>
-                </v-list-item>
+                  </v-list-item>
+                </NuxtLink>
               </v-list>
             </v-menu>
           </v-btn>
