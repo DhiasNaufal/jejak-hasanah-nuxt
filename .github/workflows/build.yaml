@@ -64,7 +64,7 @@ jobs:
       #     username: ${{ secrets.FTP_USER }}
       #     password: ${{ secrets.FTP_PASS }}
       #     remote-dir: public_html/
-      #     local-dir: .nuxt/
+      #     local-dir: .nuxt
 
       # - name: Deploy to production
       #   env:
