@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Build and Push
+
     steps:
       - name: git-checkout
         uses: actions/checkout@v3
@@ -24,14 +25,118 @@ jobs:
       - name: Build
         run: npm run build # The build command of your project
 
-      - name: Verify build output
-        run: ls -la .nuxt/dist
 
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: build
-          FOLDER: dist # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+Tentu! Berikut adalah langkah-langkah untuk mengatur CI/CD dengan GitHub Actions untuk hanya produksi pada Hostinger shared hosting:
+
+1. Persiapkan Proyek Nuxt Anda
+Pastikan file package.json Anda memiliki skrip build. Biasanya, akan terlihat seperti ini:
+
+json
+Copy code
+"scripts": {
+  "build": "nuxt build",
+  "start": "nuxt start"
+}
+2. Buat Folder .github dan File Workflow
+Buat Folder .github di Root Repositori Anda
+
+Menggunakan Terminal:
+
+bash
+Copy code
+cd path/to/your/repository
+mkdir .github
+Menggunakan File Explorer:
+
+Buka file explorer dan navigasikan ke root repositori Anda.
+Buat folder baru dan beri nama .github.
+Buat Subfolder workflows di Dalam .github
+
+Menggunakan Terminal:
+
+bash
+Copy code
+cd .github
+mkdir workflows
+Menggunakan File Explorer:
+
+Buka folder .github yang baru dibuat.
+Buat folder baru di dalamnya dan beri nama workflows.
+Buat File Workflow
+
+Menggunakan Terminal:
+
+bash
+Copy code
+touch .github/workflows/deploy-production.yml
+Menggunakan File Explorer:
+
+Buka folder workflows.
+Buat file baru bernama deploy-production.yml.
+3. Konfigurasi File Workflow
+Tambahkan konfigurasi berikut ke dalam deploy-production.yml:
+
+yaml
+Copy code
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: nuxt-build
+        path: .nuxt
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download build artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: nuxt-build
+
+    - name: Deploy to production
+      env:
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        FTP_USER: ${{ secrets.FTP_USER }}
+        FTP_PASS: ${{ secrets.FTP_PASS }}
+      run: |
+        lftp -e "mirror -R .nuxt /public_html/; quit" -u $FTP_USER,$FTP_PASS ftp://$FTP_SERVER
+      # - name: Verify build output
+      #   run: ls -la .nuxt/dist
+
+      # - name: Push
+      #   uses: s0/git-publish-subdir-action@develop
+      #   env:
+      #     REPO: self
+      #     BRANCH: build
+      #     FOLDER: .nuxt/dist # The directory where your assets are generated
+      #     GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+      #     MESSAGE: "Build: ({sha}) {msg}" # The commit message
