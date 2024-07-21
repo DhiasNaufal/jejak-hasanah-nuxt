@@ -1,5 +1,6 @@
 <template>
-  <NuxtLayout name="404">
+  <AppButtonPrimary @click="goBack">Back To Home</AppButtonPrimary>
+  <!-- <NuxtLayout name="404">
     <v-row class="h-[100vh] flex">
       <v-col cols="5" class="pa-10">
         <v-row class="h-1/2 flex pa-10" align="center">
@@ -11,7 +12,6 @@
             />
             <AppTextH2 class="text-5xl">SORRY</AppTextH2>
             <p>404 - The page you looking for is not available.</p>
-            <AppButtonPrimary @click="goBack">Back To Home</AppButtonPrimary>
           </v-col>
         </v-row>
         <v-row class="h-1/2" align="end">
@@ -19,11 +19,10 @@
         /></v-row>
       </v-col>
       <v-col align="center" align-self="end">
-        <!-- <v-img src="public/img/404.png"></v-img> -->
         <NuxtImg sizes="100vw sm:50vw md:1000px" src="/img/404.png" />
       </v-col>
     </v-row>
-  </NuxtLayout>
+  </NuxtLayout> -->
 </template>
 <!-- <v-row class="bg-grey">
   <v-col cols="12" align="center">

@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <!-- <section class="relative">
     <NuxtImg
       class="absolute z-10 md:-left-32 -left-10 -bottom-5 md:-bottom-16 xl:-left-28"
       src="/img/lengkung.png"
@@ -41,7 +41,6 @@
             consectetur elit. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit.
           </p>
-          <!-- <ButtonPrimary class="flex" /> -->
           <AppButtonPrimary label="Pelajari lebih lanjut" />
         </div>
         <NuxtImg
@@ -51,5 +50,5 @@
         />
       </div>
     </div>
-  </section>
+  </section> -->
 </template>

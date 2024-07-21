@@ -3,7 +3,7 @@
     <v-container class="">
       <v-row no-gutters justify="center">
         <v-col cols="3" align="center">
-          <NuxtImg src="img/logo/JH-white.svg" sizes="400px" />
+          <!-- <NuxtImg src="img/logo/JH-white.svg" sizes="400px" /> -->
         </v-col>
         <v-col cols="2">
           <AppTextH5>Another Page</AppTextH5>

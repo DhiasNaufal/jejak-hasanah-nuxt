@@ -1,7 +1,7 @@
 <template>
   <v-container class="relative">
     <slot />
-    <NuxtImg
+    <!-- <NuxtImg
       src="img/logo-shade.png"
       class="-z-10 absolute right-0 bottom-0"
       sizes="180px sm:250px 2xl:300px"
@@ -11,6 +11,6 @@
       src="/img/lengkung.png"
       format="webp"
       sizes="180px sm:250px 2xl:300px"
-    />
+    /> -->
   </v-container>
 </template>
