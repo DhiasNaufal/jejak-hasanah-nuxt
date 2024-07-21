@@ -8,7 +8,7 @@
       :key="index"
     >
       <AppTextH2 class="text-white">{{ item.value }}</AppTextH2>
-      <p>{{ item.desc }}</p>
+      <p class="text-sm 2xl:text-base">{{ item.desc }}</p>
     </div>
   </div>
 </template>

@@ -11,12 +11,12 @@
         <NavbarInformation
           icon="mdi-email"
           title="Email"
-          information="jhAnais@gmail.com"
+          information="jejak_hasanah@yahoo.com"
         />
         <NavbarInformation
           icon="mdi-map-marker"
-          title="Email"
-          information="jhAnais@gmail.com"
+          title="Location"
+          information="Jl. BKR, Kahuripan, Kec. Tawang, Kab. Tasikmalaya, Jawa Barat"
         />
       </div>
 
