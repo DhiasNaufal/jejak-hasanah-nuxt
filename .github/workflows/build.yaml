@@ -28,9 +28,6 @@ jobs:
       - name: Verify build output
         run: ls -la .nuxt
 
-      - name: Install lftp
-        run: sudo apt-get install lftp
-
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
