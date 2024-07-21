@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run generate # The build command of your project
+        run: npm run build # The build command of your project
 
       - name: Verify build output
         run: ls -la .nuxt/dist
@@ -32,6 +32,6 @@ jobs:
         env:
           REPO: self
           BRANCH: build
-          FOLDER: dist # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+          FOLDER: .nuxt/dist # The directory where your assets are generated
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
