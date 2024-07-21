@@ -25,6 +25,9 @@ jobs:
       - name: Build
         run: npm run build # The build command of your project
 
+      - name: Verify build output
+        run: ls -la .nuxt
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
@@ -41,6 +44,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: nuxt-build
+      - name: Verify downloaded artifacts
+        run: ls -la .nuxt
 
       - name: Install lftp
         run: sudo apt-get install lftp
