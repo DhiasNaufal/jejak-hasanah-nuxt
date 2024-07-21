@@ -1,59 +1,29 @@
-name: Deploy Nuxt App
+name: Generate a build and push to another branch
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main # The branch name your are commit the new changes
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
+    name: Build and Push
     steps:
-      - name: Checkout code
+      - name: git-checkout
         uses: actions/checkout@v3
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-
-      - name: Install dependencies
+      - name: Install all dependencies
         run: npm install
 
-      - name: Build Nuxt app
-        run: npm run generate
+      - name: Build
+        run: npm run build # The build command of your project
 
-      - name: Upload files to Hostinger
-        uses: actions/upload-artifact@v3
-        with:
-          name: nuxt-app
-          path: dist
-
-      - name: Deploy to Hostinger
-        runs-on: ubuntu-latest
-        needs: [deploy]
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
         env:
-          FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
-          FTP_USERNAME: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-
-        steps:
-          - name: Download artifact
-            uses: actions/download-artifact@v3
-            with:
-              name: nuxt-app
-              path: .
-
-          - name: Connect to FTP server
-            run: |
-              ftp -n $FTP_HOST
-              user $FTP_USERNAME $FTP_PASSWORD
-          - name: Upload files to public directory
-            run: |
-              mkdir public
-              cd public
-              for file in *; do
-                put "$file"
-              done
-          - name: Disconnect from FTP server
-            run: bye
+          REPO: self
+          BRANCH: build # The branch name where you want to push the assets
+          FOLDER: build # The directory where your assets are generated
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+          MESSAGE: "Build: ({sha}) {msg}" # The commit message
