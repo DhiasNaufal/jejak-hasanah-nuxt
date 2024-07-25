@@ -4,7 +4,7 @@
       <v-row no-gutters justify="center">
         <v-col cols="3" align="center">
           <img
-            src="public/img/logo/JH-white.svg"
+            src="public/img/logo/JH-white.png"
             width="200"
             aspect-ratio="1/1"
           />
