@@ -3,8 +3,11 @@
     <v-container class="">
       <v-row no-gutters justify="center">
         <v-col cols="3" align="center">
-          Update
-          <!-- <NuxtImg src="img/logo/JH-white.svg" sizes="400px" /> -->
+          <v-img
+            src="public/img/logo/JH-white.svg"
+            :width="200"
+            aspect-ratio="1/1"
+          />
         </v-col>
         <v-col cols="2">
           <AppTextH5>Another Page</AppTextH5>
@@ -31,7 +34,7 @@
     </v-container>
     <NuxtImg
       src="img/logo-shade.png"
-      class="-z-9 absolute -bottom-12 opacity-5 right-20 offse"
+      class="-z-9 absolute -bottom-12 opacity-5 right-20"
       sizes="sm:180px 2xl:180px"
     />
   </div>
