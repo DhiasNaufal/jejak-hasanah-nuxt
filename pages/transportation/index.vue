@@ -21,7 +21,7 @@
       </p>
     </v-row>
 
-    <!-- <v-row class="mt-10">
+    <v-row class="mt-10">
       <div class="w-full flex justify-center">
         <div class="grid grid-cols-2 gap-x-10 gap-y-10">
           <AppCardService
@@ -32,7 +32,7 @@
           />
         </div>
       </div>
-    </v-row> -->
+    </v-row>
   </v-container>
 
   <AppSectionSellingPoint
