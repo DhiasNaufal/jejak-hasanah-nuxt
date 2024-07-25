@@ -3,9 +3,9 @@
     <v-container class="">
       <v-row no-gutters justify="center">
         <v-col cols="3" align="center">
-          <v-img
+          <img
             src="public/img/logo/JH-white.svg"
-            :width="200"
+            width="200"
             aspect-ratio="1/1"
           />
         </v-col>
