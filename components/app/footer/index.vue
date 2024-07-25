@@ -3,11 +3,11 @@
     <v-container class="">
       <v-row no-gutters justify="center">
         <v-col cols="3" align="center">
-          <img
+          <!-- <img
             src="public/img/logo/JH-white.png"
             width="200"
             aspect-ratio="1/1"
-          />
+          /> -->
         </v-col>
         <v-col cols="2">
           <AppTextH5>Another Page</AppTextH5>
