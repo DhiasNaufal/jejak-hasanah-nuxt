@@ -25,7 +25,10 @@
       </v-col>
       <v-col>
         <p class="text-center">
-          Perjalanan kami dimotivasi untuk menjadi perusahaan yang xxx & xxxx
+          Perjalanan kami didorong oleh komitmen untuk menjadi perusahaan yang
+          inovatif dan terpercaya. Kami adalah perusahaan transportasi dan
+          periklanan yang mengkhususkan diri dalam layanan seperti videotron dan
+          billboard.
         </p>
       </v-col>
     </v-row>
@@ -36,7 +39,9 @@
         dot-color="primary"
         size="small"
       >
-        <template v-slot:opposite> Opposite content </template>
+        <template v-slot:opposite>
+          <NuxtImg :src="i.img" sizes="sm:180px 2xl:180px" />
+        </template>
         <div
           :class="[
             'flex',
@@ -54,9 +59,7 @@
     </v-timeline>
     <v-row justify="center" class="mt-4 mb-4">
       <v-col cols="12" align="center">
-        <AppTextH2 id="layanan"
-          >Tetap Teguh dalam Membangun Negeri...</AppTextH2
-        >
+        <AppTextH2 id="layanan">Tetap Teguh dalam Membangun Negeri</AppTextH2>
       </v-col>
       <v-col>
         <p class="text-center">

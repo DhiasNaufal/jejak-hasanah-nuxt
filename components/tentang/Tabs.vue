@@ -20,7 +20,7 @@
       <v-container class="bg-light-gray rounded-lg pa-16">
         <v-row>
           <v-col align="start">
-            <AppTextH2>{{ item.title }}</AppTextH2>
+            <AppTextH2 class="pb-5">{{ item.title }}</AppTextH2>
             <p>
               {{ item.desc }}
             </p>
@@ -53,20 +53,20 @@ const items = [
   {
     value: "tentang",
     title: "Tentang Perusahaan",
-    desc: "PT Jejak Hasanah merupakan perusahaan yang memberikan layanan transportasi dan periklanan. Didirikan pada tahun XXXX, PT Jejak Hasanah telah bekerja sama dengan puluhan perusahaan daerah hingga nasional.",
-    img: "img/logo/JH-Logo.svg",
+    desc: "PT Jejak Hasanah adalah perusahaan yang bergerak di bidang layanan transportasi dan periklanan. Didirikan pada tahun 2008, PT Jejak Hasanah telah menjalin kerja sama dengan berbagai perusahaan, baik di tingkat daerah maupun nasional.",
+    img: "img/logo-jh-new.png",
   },
   {
     value: "struktur",
     title: "Struktur Layanan",
     desc: "PT Jejak Hasanah memberikan layanan jasa transportasi seperti transportasi ringan hingga transportasi berat. Selain itu PT Jejak Hasanah juga menyediakan layanan periklanan seperti Billboard, Videotron, dan Branding ads.",
-    img: "img/logo/JH-Logo.svg",
+    img: "img/struktur.png",
   },
   {
     value: "sertifikasi",
     title: "Sertifikasi",
     desc: "PT Jejak Hasanah telah tersertifikasi Risk-Based Business yang diterbitkan oleh pemerintah. Dengan sertifikasi ini, Jejak Hasanah selalu mendedikasikan dalam menjamin standar kualitas dan keselamatan para pekerja serta secara aktif berkontribusi dalam kegiatan sosial.",
-    img: "img/logo/JH-Logo.svg",
+    img: "img/sertifikasi.png",
   },
 ];
 
