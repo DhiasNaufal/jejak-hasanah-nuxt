@@ -18,7 +18,7 @@
   <v-window v-model="tab" class="mt-4">
     <v-window-item v-for="item in items" :value="item.value">
       <v-container class="bg-light-gray rounded-lg pa-16">
-        <v-row>
+        <v-row align="center">
           <v-col align="start">
             <AppTextH2 class="pb-5">{{ item.title }}</AppTextH2>
             <p>
@@ -26,7 +26,7 @@
             </p>
           </v-col>
           <v-col align="center">
-            <NuxtImg sizes="100vw sm:50vw md:400px" :src="item.img" />
+            <NuxtImg sizes="sm:400px 2xl:260px" :src="item.img" />
           </v-col>
         </v-row>
       </v-container>

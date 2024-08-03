@@ -1,6 +1,6 @@
 <template>
-  <div class="h-[90vh]">
-    <AppSectionBackgroundImage class="h-4/5 relative">
+  <div class="h-[70vh]">
+    <AppSectionBackgroundImage class="h-[90%] relative">
       <v-container class="h-full mb-6">
         <v-row align="center" class="h-full text-white" no-gutters>
           <v-col cols="6">
@@ -15,7 +15,7 @@
       </v-container>
       <LandingValue />
     </AppSectionBackgroundImage>
-    <div class="h-1/5 flex items-center" align="center">
+    <!-- <div class="h-1/5 flex items-center" align="center">
       <v-container align="center">
         <v-row align="center">
           <v-col> Our Clients: </v-col>
@@ -24,7 +24,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </div>
+    </div> -->
   </div>
 </template>
 <script lang="ts">

@@ -11,13 +11,17 @@
           Hubungi kami untuk obrolan lebih lanjut
         </h1>
         <div class="flex gap-3">
-          <AppButtonPrimary>Hubungi</AppButtonPrimary>
-          <AppButtonPrimary>Hubungi</AppButtonPrimary>
+          <AppButtonPrimary>{{ kontak.nomor }}</AppButtonPrimary>
+          <AppButtonPrimary>{{ kontak.email }}</AppButtonPrimary>
         </div>
       </div>
     </section>
   </v-container>
 </template>
+<script lang="ts" setup>
+import informationMock from "~/app/mock/information.mock";
+const kontak = informationMock.kontak;
+</script>
 <style>
 .opacity {
   background-color: rgba(47, 49, 139, 0.6);

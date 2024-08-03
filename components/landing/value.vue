@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-[100px] w-1/2 trapezoid absolute bottom-0 right-0 px-36 flex gap-16 items-center justify-center"
+    class="h-[100px] w-1/2 trapezoid absolute bottom-0 right-0 px-28 flex gap-16 items-center justify-center"
   >
     <div
       class="text-white flex flex-col items-center"
