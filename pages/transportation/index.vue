@@ -1,6 +1,6 @@
 <template>
   <AppHeroImage class="h-[60vh]" :img="heroimg">
-    <v-container class="h-full">
+    <AppContainer class="h-full">
       <v-row align="center" justify="center" class="h-full">
         <v-col justify="center" algin="center">
           <AppTextH2 class="text-white">Layanan Kendaraan</AppTextH2>
@@ -11,9 +11,9 @@
         </v-col>
         <v-col></v-col>
       </v-row>
-    </v-container>
+    </AppContainer>
   </AppHeroImage>
-  <v-container class="my-10">
+  <AppContainer class="my-10">
     <v-row justify="center">
       <AppTextH2 id="layanan">Layanan Kendaraan</AppTextH2>
       <p class="text-center">
@@ -33,14 +33,14 @@
         </div>
       </div>
     </v-row>
-  </v-container>
 
-  <AppSectionSellingPoint
-    title="Keunggulan Layanan kami"
-    subtitle="Kami berkomitmen untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri. "
-    :items="sellingPointMock.transport"
-  />
-  <AppCardPortfolio :desc="portofolio" path="/portofolio" />
+    <AppSectionSellingPoint
+      title="Keunggulan Layanan kami"
+      subtitle="Kami berkomitmen untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri. "
+      :items="sellingPointMock.transport"
+    />
+    <AppCardPortfolio :desc="portofolio" path="/portofolio" />
+  </AppContainer>
 </template>
 <script lang="ts" setup>
 import sellingPointMock from "~/app/mock/sellingPoint.mock";

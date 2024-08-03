@@ -1,39 +1,32 @@
 <template>
-  <v-container fluid>
-    <v-row align="center" justify="end">
-      <v-col cols="5" xl="6">
-        <v-carousel
-          show-arrows="hover"
-          class="rounded-xl"
-          hide-delimiters
-          cycle
-        >
-          <v-carousel-item
-            v-for="(item, index) in 5"
-            :src="`/img/home/corousel/${index + 1}.png`"
-            cover
-          ></v-carousel-item>
-        </v-carousel>
-      </v-col>
-      <v-col>
-        <v-row justify="center">
-          <v-col cols="12" align="start">
-            <p>Our Services</p>
-            <AppTextH2>We Provide Innovation</AppTextH2>
-          </v-col>
-          <v-col v-for="service in services" cols="12">
-            <AppImageNumber
-              :img="service.image"
-              :title="service.title"
-              :number="service.id"
-              :desc="service.desc"
-              :path="service.path"
-            />
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-row align="center" justify="end">
+    <v-col cols="5" xl="6">
+      <v-carousel show-arrows="hover" class="rounded-xl" hide-delimiters cycle>
+        <v-carousel-item
+          v-for="(item, index) in 5"
+          :src="`/img/home/corousel/${index + 1}.png`"
+          cover
+        ></v-carousel-item>
+      </v-carousel>
+    </v-col>
+    <v-col>
+      <v-row justify="center">
+        <v-col cols="12" align="start">
+          <p>Our Services</p>
+          <AppTextH2>We Provide Innovation</AppTextH2>
+        </v-col>
+        <v-col v-for="service in services" cols="12">
+          <AppImageNumber
+            :img="service.image"
+            :title="service.title"
+            :number="service.id"
+            :desc="service.desc"
+            :path="service.path"
+          />
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
 <script lang="ts" setup>
 const services = [

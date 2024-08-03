@@ -11,12 +11,12 @@
         <NavbarInformation
           icon="mdi-email"
           title="Email"
-          information="jejak_hasanah@yahoo.com"
+          :information="information.kontak.email"
         />
         <NavbarInformation
           icon="mdi-map-marker"
           title="Location"
-          information="Jl. BKR, Kahuripan, Kec. Tawang, Kab. Tasikmalaya, Jawa Barat"
+          :information="information.alamat"
         />
       </div>
 
@@ -67,11 +67,13 @@
   </div> -->
 </template>
 <script>
+import informationMock from "~/app/mock/information.mock";
 import navMenu from "~/app/mock/menu.mock";
 export default {
   data() {
     return {
       navMenu: navMenu.menu,
+      information: informationMock,
     };
   },
 };

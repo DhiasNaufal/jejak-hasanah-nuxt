@@ -1,6 +1,6 @@
 <template>
   <AppHeroImage class="h-[60vh]" :img="heroimg">
-    <v-container class="h-full">
+    <AppContainer class="h-full">
       <v-row align="center" justify="center" class="h-full">
         <v-col justify="center" algin="center">
           <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
@@ -9,10 +9,10 @@
         </v-col>
         <v-col></v-col>
       </v-row>
-    </v-container>
+    </AppContainer>
   </AppHeroImage>
 
-  <v-container class="my-10">
+  <AppContainer class="my-10">
     <v-row justify="center">
       <AppTextH2>Layanan Advertising</AppTextH2>
       <p class="text-center">
@@ -32,14 +32,14 @@
         </div>
       </div>
     </v-row>
-  </v-container>
 
-  <AppSectionSellingPoint
-    title="Pelayanan Tambahan"
-    subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"
-    :items="sellingPointMock.ads"
-  />
-  <AppCardPortfolio :desc="portofolio" path="/portofolio" />
+    <AppSectionSellingPoint
+      title="Pelayanan Tambahan"
+      subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"
+      :items="sellingPointMock.ads"
+    />
+    <AppCardPortfolio :desc="portofolio" path="/portofolio" />
+  </AppContainer>
 </template>
 <script lang="ts" setup>
 import sellingPointMock from "~/app/mock/sellingPoint.mock";

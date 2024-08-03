@@ -1,7 +1,7 @@
 <template>
   <div class="h-[70vh]">
     <AppSectionBackgroundImage class="h-[90%] relative">
-      <v-container class="h-full mb-6">
+      <AppContainer class="h-full mb-6">
         <v-row align="center" class="h-full text-white" no-gutters>
           <v-col cols="6">
             <AppTextTitle> {{ content.title }}</AppTextTitle>
@@ -12,7 +12,7 @@
             <v-btn color="secondary">Lebih lanjut</v-btn>
           </v-col>
         </v-row>
-      </v-container>
+      </AppContainer>
       <LandingValue />
     </AppSectionBackgroundImage>
     <!-- <div class="h-1/5 flex items-center" align="center">

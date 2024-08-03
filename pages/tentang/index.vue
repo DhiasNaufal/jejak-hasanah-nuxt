@@ -1,6 +1,6 @@
 <template>
   <AppHeroImage class="h-[60vh]">
-    <v-container class="h-full">
+    <AppContainer class="h-full">
       <v-row align="center" justify="center" class="h-full">
         <v-col justify="center" algin="center">
           <AppTextH2 class="text-white">Layanan Kendaraan</AppTextH2>
@@ -11,9 +11,9 @@
         </v-col>
         <v-col></v-col>
       </v-row>
-    </v-container>
+    </AppContainer>
   </AppHeroImage>
-  <v-container>
+  <AppContainer>
     <v-row>
       <v-col align="center">
         <TentangTabs />
@@ -21,7 +21,7 @@
     </v-row>
     <v-row align="center">
       <v-col align="center">
-        <NuxtImg src="img/mitra-all.png" sizes="sm:400px 2xl:180px"
+        <NuxtImg src="img/mitra-all.png" sizes="sm:400px 2xl:400px"
       /></v-col>
       <v-col align="start">
         <AppTextH2 class="pb-5">Dipercaya oleh Banyak Perusahaan</AppTextH2>
@@ -89,7 +89,7 @@
         </p>
       </v-col>
     </v-row>
-  </v-container>
+  </AppContainer>
 </template>
 <script lang="ts" setup>
 import sejarahMock from "~/app/mock/sejarah.mock";

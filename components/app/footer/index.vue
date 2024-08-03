@@ -40,12 +40,13 @@
 </template>
 <script lang="ts" setup>
 import menuMock from "~/app/mock/menu.mock";
+import informationMock from "~/app/mock/information.mock";
 const contact = [
   {
     icon: "mdi-map-marker",
-    value: "Jl. BKR, Kahuripan, Kec. Tawang, Kab. Tasikmalaya, Jawa Barat",
+    value: informationMock.alamat,
   },
-  { icon: "mdi-phone", value: "+5834682368" },
+  { icon: "mdi-phone", value: informationMock.kontak.nomor },
 ];
 const socialMedia = [
   { icon: "mdi-instagram", link: "/" },
