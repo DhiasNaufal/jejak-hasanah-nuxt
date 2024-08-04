@@ -1,6 +1,6 @@
 <template>
   <v-row align="center" justify="end">
-    <v-col cols="5" xl="6">
+    <!-- <v-col cols="5" xl="6">
       <v-carousel show-arrows="hover" class="rounded-xl" hide-delimiters cycle>
         <v-carousel-item
           v-for="(item, index) in 5"
@@ -8,12 +8,12 @@
           cover
         ></v-carousel-item>
       </v-carousel>
-    </v-col>
+    </v-col> -->
     <v-col>
       <v-row justify="center">
         <v-col cols="12" align="start">
-          <p>Our Services</p>
-          <AppTextH2>We Provide Innovation</AppTextH2>
+          <p>Layanan Kami</p>
+          <AppTextH2>Kami Memberikan Inovasi</AppTextH2>
         </v-col>
         <v-col v-for="service in services" cols="12">
           <AppImageNumber

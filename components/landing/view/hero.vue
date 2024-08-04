@@ -9,22 +9,12 @@
             <br />
             <p>{{ content.desc }}</p>
             <br />
-            <v-btn color="secondary">Lebih lanjut</v-btn>
+            <AppButtonPrimary color="secondary">Lebih lanjut</AppButtonPrimary>
           </v-col>
         </v-row>
       </AppContainer>
       <LandingValue />
     </AppSectionBackgroundImage>
-    <!-- <div class="h-1/5 flex items-center" align="center">
-      <v-container align="center">
-        <v-row align="center">
-          <v-col> Our Clients: </v-col>
-          <v-col v-for="url in mitra" cols="2">
-            <v-img :height="100" aspect-ratio="16/9" :src="url"> </v-img>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div> -->
   </div>
 </template>
 <script lang="ts">

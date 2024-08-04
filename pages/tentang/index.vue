@@ -13,13 +13,13 @@
       </v-row>
     </AppContainer>
   </AppHeroImage>
-  <AppContainer>
+  <AppContainer class="mt-5">
     <v-row>
       <v-col align="center">
         <TentangTabs />
       </v-col>
     </v-row>
-    <v-row align="center">
+    <v-row align="center" class="my-10">
       <v-col align="center">
         <NuxtImg src="img/mitra-all.png" sizes="sm:400px 2xl:400px"
       /></v-col>
@@ -77,15 +77,9 @@
       </v-col>
       <v-col>
         <p class="text-center">
-          Jejak Hasanah berkomitmen untuk terus berkarya dalam pembangunan
-          Indonesia dengan mengedepankan tiga pilar utama: 'Amanah', 'Hasanah',
-          dan 'Alhamdulillah'. Dengan landasan kepercayaan, kebaikan, dan rasa
-          syukur, kami berusaha memberikan kontribusi nyata untuk kemajuan
-          Indonesia. Setiap langkah yang kami ambil didorong oleh semangat untuk
-          memberikan dampak positif dan berkelanjutan bagi masyarakat dan
-          negara. Melalui inovasi, kolaborasi, dan integritas, Jejak Hasanah
-          bertujuan untuk menjadi bagian penting dalam perjalanan menuju
-          Indonesia yang lebih maju dan sejahtera.
+          Melalui inovasi, kolaborasi, dan integritas, Jejak Hasanah bertujuan
+          untuk menjadi bagian penting dalam perjalanan menuju Indonesia yang
+          lebih maju dan sejahtera.
         </p>
       </v-col>
     </v-row>
