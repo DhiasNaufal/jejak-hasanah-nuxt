@@ -42,20 +42,20 @@ export default {
   transport: [
     {
       no: 1,
-      icon: "mdi-account-circle",
+      icon: "mdi-tools",
       title: "Pemeliharaan Kendaraan",
       desc: "Pengelolaan penuh pemeliharaan kendaraan untuk memastikan performa optimal.",
     },
     {
       no: 2,
-      icon: "mdi-account-circle",
+      icon: "mdi-steering",
       title: "Driver Profesional",
       desc: "Driver terlatih dan telah lulus seleksi ketat, menjamin keamanan dan kenyamanan perjalanan.",
     },
     {
       no: 3,
-      icon: "mdi-account-circle",
-      title: "Pengelolaan Legal dan Permits",
+      icon: "mdi-gavel",
+      title: "Pengelolaan Legal ",
       desc: "Semua urusan legal dan perizinan diurus oleh kami, memberikan kemudahan bagi klien.",
     },
   ],

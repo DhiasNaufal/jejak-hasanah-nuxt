@@ -1,5 +1,5 @@
 <template>
-  <v-container class="bg-primary rounded-xl my-10">
+  <v-container class="bg-primary rounded-0 my-10">
     <v-container>
       <v-row>
         <v-col>
@@ -10,7 +10,7 @@
       </v-row>
       <v-row align="center">
         <v-col>
-          <v-img src="public/img/service/ads_port.png"></v-img>
+          <NuxtImg :src="imgPath"></NuxtImg>
         </v-col>
         <v-col align="start" justify="between">
           <p>

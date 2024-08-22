@@ -4,7 +4,9 @@ export default {
     variant: [
       {
         id: "1",
+        icon: "mdi-bus",
         name: "Bus",
+        imgPath: "/img/service/Service_Bus.png",
         desc: "Kami menyediakan bus dengan berbagai ukuran yang dapat disesuaikan sesuai kebutuhan klien. Menggunakan karoseri terbaik pilihan kami, bus ini dirancang untuk memberikan kenyamanan dan keamanan tertinggi dalam layanan antar jemput karyawan (AJK).",
         keunggulan: [
           {
@@ -28,6 +30,8 @@ export default {
       {
         id: "2",
         name: "Minibus",
+        icon: "mdi-van-passenger",
+        imgPath: "/img/service/Service_Minibus.png",
         desc: "Minibus kami dirancang dengan kualitas tinggi untuk mendukung fleksibilitas transportasi Anda. Minibus ideal untuk layanan antar jemput karyawan (AJK) dengan rute yang lebih fleksibel. Keunggulan minibus kami termasuk",
         keunggulan: [
           {
@@ -50,7 +54,9 @@ export default {
       },
       {
         id: "3",
+        icon: "mdi-car-estate",
         name: "Light Vehicle (LV)",
+        imgPath: "/img/service/Service_Lv.png",
         desc: "Kami menyediakan Mitsubishi Triton dan Hilux yang dirancang untuk operasional karyawan di area site. Kendaraan ini menawarkan",
         keunggulan: [
           {
@@ -73,7 +79,9 @@ export default {
       },
       {
         id: "4",
+        icon: "mdi-car",
         name: "SUV",
+        imgPath: "/img/service/Service_Suv.png",
         desc: "Untuk operasional Project Manager, kami menawarkan Pajero dan Fortuner yang memastikan kenyamanan dan performa tinggi. Keunggulan SUV kami",
         keunggulan: [
           {

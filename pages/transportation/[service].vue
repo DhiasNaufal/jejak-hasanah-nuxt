@@ -36,7 +36,10 @@
   </AppContainer>
 </template>
 <script lang="ts" setup>
+const route = useRoute();
 import layananMock from "~/app/mock/layanan.mock";
 const transportasi = layananMock.transportation.variant;
-const transportasiData = transportasi.find((item) => item.id == "1");
+const transportasiData = transportasi.find(
+  (item) => item.name == route.params.service
+);
 </script>

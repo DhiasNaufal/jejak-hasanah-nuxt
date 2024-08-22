@@ -1,7 +1,7 @@
 <template>
   <AppHeroImage class="h-[30vh] relative" :img="heroimg">
     <AppContainer class="h-full flex flex-col items-start justify-center">
-      <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
+      <AppTextH2 class="text-white">Layanan Transportasi</AppTextH2>
       <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
     </AppContainer>
   </AppHeroImage>
@@ -10,29 +10,20 @@
     <v-row justify="center">
       <AppTextH2 id="layanan">Layanan Kendaraan</AppTextH2>
       <p class="text-center">
-        {{ portofolio }}
+        <!-- {{ portofolio }} -->
       </p>
     </v-row>
-
-    <v-row class="mt-10">
-      <div class="w-full flex justify-center">
-        <div class="grid grid-cols-2 gap-x-10 gap-y-10">
-          <AppCardService
-            v-for="service in transportation"
-            :title="service.name"
-            :desc="service.desc"
-            :path="`/transportation/${service.name}`"
-          />
-        </div>
-      </div>
-    </v-row>
-
+    <AppCardItem :items="transportation" />
     <AppSectionSellingPoint
       title="Keunggulan Layanan kami"
-      subtitle="Kami berkomitmen untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri. "
+      subtitle="Kami berkomitmen untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri."
       :items="sellingPointMock.transport"
     />
-    <AppCardPortfolio :desc="portofolio" path="/portofolio/transportation" />
+    <AppCardPortfolio
+      img-path="/img/service/Porto_cover_transport.png"
+      :desc="portofolio"
+      path="/portofolio/transportation"
+    />
   </AppContainer>
 </template>
 <script lang="ts" setup>

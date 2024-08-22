@@ -9,11 +9,11 @@
     <AppSectionSellingPoint
       title="Keunggulan Jejak Hasanah"
       subtitle="Jejak Hasanah Menawarkan Inovasi dan Profesionalisme kepada Mitra"
-      class="mb-16"
+      class="mb-3"
       :items="point"
     />
 
-    <v-container>
+    <v-container class="mb-3">
       <v-col cols="12" align="start">
         <p>Testimoni</p>
         <AppTextH2>Mari dengan kata mereka</AppTextH2>
