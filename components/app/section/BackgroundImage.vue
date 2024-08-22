@@ -1,14 +1,15 @@
 <template>
-  <div class="bg-cover bg-center" :style="style">
+  <div class="bg-cover bg-center" :style="img">
     <slot />
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      style: "background-image: url('/img/home/homeBanner.png')",
-    };
+<script lang="ts" setup>
+const props = defineProps({
+  img: {
+    type: String,
+    default: "background-image: url('/img/home/homeBanner.png')",
   },
-};
+});
+
+const img = computed(() => props.img);
 </script>

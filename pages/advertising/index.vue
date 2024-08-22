@@ -1,14 +1,9 @@
 <template>
   <AppHeroImage class="h-[60vh]" :img="heroimg">
-    <AppContainer class="h-full">
-      <v-row align="center" justify="center" class="h-full">
-        <v-col justify="center" algin="center">
-          <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
-          <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
-          <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
-        </v-col>
-        <v-col></v-col>
-      </v-row>
+    <AppContainer class="h-full flex flex-col items-start justify-center">
+      <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
+      <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
+      <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
     </AppContainer>
   </AppHeroImage>
 
