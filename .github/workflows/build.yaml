@@ -34,7 +34,7 @@ jobs:
           REPO: self
           BRANCH: build
           FOLDER: dist
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}"
       # - name: Deploy to Hostinger
       #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
