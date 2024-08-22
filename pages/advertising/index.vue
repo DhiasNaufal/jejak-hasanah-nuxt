@@ -32,7 +32,7 @@
       subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"
       :items="sellingPointMock.ads"
     />
-    <AppCardPortfolio :desc="portofolio" path="/portofolio" />
+    <AppCardPortfolio :desc="portofolio" path="/portofolio/advertising" />
   </AppContainer>
 </template>
 <script lang="ts" setup>
