@@ -14,15 +14,9 @@
             >
           </div>
           <p class="pt-3">
-            {{ data?.desc1 }}
+            {{ data?.desc }}
           </p>
           <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" />
-          <p>Mitra:</p>
-          <AppTextH5>{{ data?.mitra }}</AppTextH5>
-          <p>Lokasi:</p>
-          <AppTextH5>{{ data?.lokasi }}</AppTextH5>
-          <p>Service:</p>
-          <AppTextH5>{{ data?.service }}</AppTextH5>
 
           <v-card
             variant="flat"
@@ -44,7 +38,7 @@ const route = useRoute();
 import testiMock from "~/app/mock/testi.mock";
 const testi = testiMock.testimoni;
 import portofolioMock from "~/app/mock/portofolio.mock";
-const data = portofolioMock.transportasi.find(
+const data = portofolioMock.advertising.variant.find(
   (item) => item.title == route.params.detail
 );
 </script>

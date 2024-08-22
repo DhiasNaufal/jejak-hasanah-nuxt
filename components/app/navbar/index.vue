@@ -8,12 +8,12 @@
 
     <div class="flex flex-col justify-end w-[60%]">
       <div id="contact" class="flex gap-10 items-center pl-12 pb-4">
-        <NavbarInformation
+        <AppNavbarInformation
           icon="mdi-email"
           title="Email"
           :information="information.kontak.email"
         />
-        <NavbarInformation
+        <AppNavbarInformation
           icon="mdi-map-marker"
           title="Location"
           :information="information.alamat"

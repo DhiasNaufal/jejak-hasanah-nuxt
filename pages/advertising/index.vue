@@ -1,5 +1,5 @@
 <template>
-  <AppHeroImage class="h-[60vh]" :img="heroimg">
+  <AppHeroImage class="h-[30vh]" :img="heroimg">
     <AppContainer class="h-full flex flex-col items-start justify-center">
       <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
       <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>

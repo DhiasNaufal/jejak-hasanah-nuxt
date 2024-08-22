@@ -16,21 +16,6 @@
     </v-tab>
   </v-tabs>
   <v-window v-model="tab" class="mt-4">
-    <!-- <v-window-item v-for="item in items" :value="item.value">
-      <v-container class="bg-light-gray rounded-lg pa-16">
-        <v-row align="center">
-          <v-col align="start">
-            <AppTextH2 class="pb-5">{{ item.title }}</AppTextH2>
-            <p>
-              {{ item.desc }}
-            </p>
-          </v-col>
-          <v-col align="center">
-            <img :src="item.img" class="h-[300px]" />
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-window-item> -->
     <v-window-item value="tentang">
       <v-container class="bg-light-gray rounded-lg pa-16">
         <v-row align="center">

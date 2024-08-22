@@ -1,11 +1,8 @@
 <template>
-  <AppHeroImage class="h-[60vh]">
+  <AppHeroImage class="h-[30vh]">
     <AppContainer class="h-full flex flex-col items-start justify-center">
       <AppTextH2 class="text-white">Tentang Perusahaan</AppTextH2>
       <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
-      <NuxtLink to="#layanan">
-        <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
-      </NuxtLink>
     </AppContainer>
   </AppHeroImage>
   <AppContainer class="mt-5">

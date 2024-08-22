@@ -23,7 +23,16 @@ export default {
     },
     {
       title: "Portofolio",
-      path: "/portofolio",
+      path: [
+        {
+          title: "Transportation",
+          path: "/portofolio/transportation",
+        },
+        {
+          title: "Advertising",
+          path: "/portofolio/advertising",
+        },
+      ],
     },
   ],
 };
