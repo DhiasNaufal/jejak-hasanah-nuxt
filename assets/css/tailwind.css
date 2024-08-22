@@ -43,7 +43,8 @@ body {
   background-color: rgba(47, 49, 139, 0.9);
 }
 .fixed-margin {
-  margin: 0px 9vw;
+  margin-left: 9vw;
+  margin-right: 9vw;
 }
 @media (min-width: 1920px) {
   .fixed-margin {
