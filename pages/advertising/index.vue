@@ -8,13 +8,15 @@
 
   <AppContainer class="my-10">
     <v-row justify="center">
-      <AppTextH2>Layanan Advertising</AppTextH2>
-      <p class="text-center">
-        Jejak Hasanah menyediakan layanan advertising yang beragam, meliputi
-        billboard, videotron, mini display, dan café branding.
-      </p>
+      <v-col cols="12" align="center">
+        <AppTextH2>Layanan Advertising</AppTextH2>
+        <p class="text-lg text-neutral-500 md:w-3/5 mb-5">
+          Jejak Hasanah menyediakan layanan advertising yang beragam, meliputi
+          billboard, videotron, mini display, dan café branding.
+        </p>
+      </v-col>
     </v-row>
-    <v-row class="mt-10">
+    <!-- <v-row class="mt-10">
       <div class="w-full flex justify-center">
         <div class="grid grid-cols-3 gap-x-10 gap-y-10">
           <AppCardService
@@ -25,14 +27,18 @@
           />
         </div>
       </div>
-    </v-row>
-
+    </v-row> -->
+    <AppCardItem :items="advertising" />
     <AppSectionSellingPoint
       title="Pelayanan Tambahan"
       subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"
       :items="sellingPointMock.ads"
     />
-    <AppCardPortfolio :desc="portofolio" path="/portofolio/advertising" />
+    <AppCardPortfolio
+      img-path="/img/service/Porto_cover_transport.png"
+      :desc="portofolio"
+      path="/portofolio/advertising"
+    />
   </AppContainer>
 </template>
 <script lang="ts" setup>

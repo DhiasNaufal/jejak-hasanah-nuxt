@@ -4,8 +4,15 @@
     <AppContainer class="pt-3 pb-3">
       <v-row class="">
         <v-col class="pa-0 pt-5">
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" />
-          <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+          <NuxtImg
+            src="/img/service/Service_Bus.png"
+            sizes="sm:800px 2xl:1000px"
+            class="mb-4"
+          />
+          <NuxtImg
+            src="/img/service/Service_Bus.png"
+            sizes="sm:800px 2xl:1000px"
+          />
         </v-col>
         <v-col class="pa-0 pl-5">
           <div class="h-[15vh] flex items-center">
@@ -16,22 +23,26 @@
           <p class="pt-3">
             {{ data?.desc1 }}
           </p>
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+          <NuxtImg src="/img/mitra/Mitra_kpp.png" sizes="sm:80px 2xl:200px" />
           <p>Mitra:</p>
-          <AppTextH5>{{ data?.mitra }}</AppTextH5>
+          <AppTextH5 class="text-primary">{{ data?.mitra }}</AppTextH5>
           <p>Lokasi:</p>
-          <AppTextH5>{{ data?.lokasi }}</AppTextH5>
+          <AppTextH5 class="text-primary">{{ data?.lokasi }}</AppTextH5>
           <p>Service:</p>
-          <AppTextH5>{{ data?.service }}</AppTextH5>
+          <AppTextH5 class="text-primary">{{ data?.service }}</AppTextH5>
 
           <v-card
             variant="flat"
             v-for="item in testi"
-            append-avatar="https://cdn.vuetifyjs.com/images/john.jpg"
             class="mx-auto bg-light-gray rounded-lg mb-2 mt-4"
             :subtitle="item.jabatan"
             :title="item.nama"
           >
+            <template v-slot:append>
+              <v-avatar size="50">
+                <NuxtImg alt="John" :src="item.img"></NuxtImg>
+              </v-avatar>
+            </template>
             <v-card-text>{{ item.text }}</v-card-text>
           </v-card>
         </v-col>

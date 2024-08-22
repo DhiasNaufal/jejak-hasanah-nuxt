@@ -16,7 +16,7 @@
     <div v-for="(item, index) in transportasiData?.keunggulan">
       <v-row v-if="index % 2 == 0" align="center">
         <v-col class="pa-0 pt-5">
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+          <NuxtImg :src="item?.imgPath" sizes="sm:800px 2xl:1000px" />
         </v-col>
         <v-col class="pl-5">
           <AppTextH2>{{ item.title }}</AppTextH2>
@@ -29,7 +29,7 @@
           <p class="text-lg">{{ item.desc }}</p>
         </v-col>
         <v-col class="pa-0 pt-5">
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+          <NuxtImg :src="item?.imgPath" sizes="sm:800px 2xl:1000px" />
         </v-col>
       </v-row>
     </div>
@@ -37,6 +37,6 @@
 </template>
 <script lang="ts" setup>
 import layananMock from "~/app/mock/layanan.mock";
-const transportasi = layananMock.advertising.variant;
-const transportasiData = transportasi.find((item) => item.id == "1");
+const transportasi: any = layananMock.advertising.variant;
+const transportasiData = transportasi.find((item: any) => item.id == "1");
 </script>
