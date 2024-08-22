@@ -2,7 +2,7 @@
   <div class="bg-white md:flex gap-3 hidden">
     <div class="sm:w-[40%] hidden sm:flex justify-end py-5">
       <NuxtLink to="/">
-        <img src="/img/JH-biru.png" width="228" />
+        <img src="/img/app/official_logo_jh.png" width="228" />
       </NuxtLink>
     </div>
 
