@@ -3,13 +3,15 @@
     <v-container class="">
       <v-row no-gutters justify="center">
         <v-col cols="3" align="center">
-          <img src="/img/home/JH-White.png" width="228" />
+          <img src="/img/app/official_logo_jh_white.png" width="228" />
         </v-col>
         <v-col cols="2">
           <AppTextH5>Another Page</AppTextH5>
           <div class="flex items-center" v-for="item in menuMock.menu">
             <v-icon>mdi-menu-right</v-icon>
-            <NuxtLink :to="item.path">{{ item.title }}</NuxtLink>
+            <NuxtLink :to="item.path as string    ">
+              {{ item.title }}
+            </NuxtLink>
           </div>
         </v-col>
         <v-col cols="3">
