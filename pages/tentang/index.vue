@@ -13,7 +13,8 @@
     </v-row>
     <v-row align="center" class="my-10">
       <v-col align="center">
-        <img src="/img/mitra/mitra.png" class="w-full"
+        <NuxtImg src="img/mitra/Mitra.png" sizes="sm:800px 2xl:1000px" />
+        <img src="/img/mitra/Mitra.png" class="w-full"
       /></v-col>
       <v-col align="start">
         <AppTextH2 class="pb-5">Dipercaya oleh Banyak Perusahaan</AppTextH2>
