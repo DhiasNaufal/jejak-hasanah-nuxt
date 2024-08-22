@@ -3,7 +3,7 @@ export default {
     {
       no: 1,
       icon: "mdi-certificate",
-      title: "Kualitas dan Keamanan Terjamin",
+      title: "Kualitas dan Keamanan ",
       desc: "Kami menyediakan layanan transportasi dengan kendaraan berkualitas tinggi dan man power terlatih, memastikan keselamatan dan keandalan di segala area",
     },
     {
@@ -15,7 +15,7 @@ export default {
     {
       no: 3,
       icon: "mdi-trophy",
-      title: "Layanan Pelanggan yang Unggul",
+      title: "Layanan Pelanggan ",
       desc: "Kami berkomitmen untuk memberikan layanan pelanggan yang terbaik dengan respons cepat dan solusi tepat waktu untuk kebutuhan dan masalah klien.",
     },
   ],

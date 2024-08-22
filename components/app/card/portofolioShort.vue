@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-cover bg-center h-5/6 w-5/6 rounded-xl" :style="img">
-    <div class="portfolio-card h-full rounded-xl">
+  <div class="bg-cover bg-center h-5/6 w-5/6 rounded-0" :style="img">
+    <div class="portfolio-card h-full rounded-0">
       <div class="h-full flex flex-col justify-center w-7/12 p-10">
         <AppTextH2 class="text-white font-semibold">{{ title }}</AppTextH2>
         <p class="text-white">{{ desc }}</p>
