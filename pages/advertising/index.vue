@@ -3,7 +3,6 @@
     <AppContainer class="h-full flex flex-col items-start justify-center">
       <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
       <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
-      <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
     </AppContainer>
   </AppHeroImage>
 

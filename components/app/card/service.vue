@@ -8,7 +8,7 @@
       <NuxtLink>
         <v-btn color="white" text="Share"></v-btn>
       </NuxtLink>
-      <NuxtLink :to="path">
+      <NuxtLink :to="path" >
         <v-btn color="white" text="Explore"></v-btn>
       </NuxtLink>
     </v-card-actions>
@@ -29,8 +29,8 @@ defineProps({
     default: "desc",
   },
   path: {
-    type: String,
-    default: "/",
+    type: Object,
+    default: ()=>{},
   },
 });
 </script>
