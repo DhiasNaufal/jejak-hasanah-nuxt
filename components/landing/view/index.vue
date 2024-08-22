@@ -1,7 +1,7 @@
 <template>
   <LandingViewHero />
   <AppContainer>
-    <!-- <LandingViewOverview /> -->
+    <LandingViewOverview />
     <AppSectionBackgroundLogo>
       <LandingViewServices class="my-14" />
     </AppSectionBackgroundLogo>
