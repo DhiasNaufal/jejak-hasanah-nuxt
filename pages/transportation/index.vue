@@ -32,7 +32,7 @@
       subtitle="Kami berkomitmen untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri. "
       :items="sellingPointMock.transport"
     />
-    <AppCardPortfolio :desc="portofolio" path="/portofolio" />
+    <AppCardPortfolio :desc="portofolio" path="/portofolio/transportation" />
   </AppContainer>
 </template>
 <script lang="ts" setup>
