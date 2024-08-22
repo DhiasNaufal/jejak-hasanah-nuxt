@@ -8,7 +8,7 @@
     </v-col>
     <v-row>
       <v-col align="center" v-for="item in items" cols="4">
-        <v-icon size="x-large" color="primary">{{ item.icon }}</v-icon>
+        <v-icon size="65" color="primary">{{ item.icon }}</v-icon>
         <h1 class="text-2xl font-semibold">{{ item.title }}</h1>
         <p class="text-center">
           {{ item.desc }}

@@ -1,16 +1,8 @@
 <template>
-  <AppHeroImage class="h-[60vh]">
-    <AppContainer class="h-full">
-      <v-row align="center" justify="center" class="h-full">
-        <v-col justify="center" algin="center">
-          <AppTextH2 class="text-white">Layanan Kendaraan</AppTextH2>
-          <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
-          <NuxtLink to="#layanan">
-            <AppButtonPrimary>Pelajari lebih lanjut</AppButtonPrimary>
-          </NuxtLink>
-        </v-col>
-        <v-col></v-col>
-      </v-row>
+  <AppHeroImage class="h-[30vh]">
+    <AppContainer class="h-full flex flex-col items-start justify-center">
+      <AppTextH2 class="text-white">Tentang Perusahaan</AppTextH2>
+      <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
     </AppContainer>
   </AppHeroImage>
   <AppContainer class="mt-5">
@@ -21,7 +13,7 @@
     </v-row>
     <v-row align="center" class="my-10">
       <v-col align="center">
-        <NuxtImg src="img/mitra-all.png" sizes="sm:400px 2xl:400px"
+        <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px"
       /></v-col>
       <v-col align="start">
         <AppTextH2 class="pb-5">Dipercaya oleh Banyak Perusahaan</AppTextH2>

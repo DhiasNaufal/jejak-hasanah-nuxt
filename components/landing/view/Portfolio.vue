@@ -12,8 +12,13 @@
   <v-carousel show-arrows="hover" hide-delimiters>
     <v-carousel-item v-for="(item, index) in portofolio">
       <NuxtLink
-        to="/transportation"
         class="flex fill-height justify-center align-center"
+        :to="{
+          path: `/portofolio/${item.title}`,
+          query: {
+            id: item.id,
+          },
+        }"
       >
         <AppCardPortofolioShort
           :title="item.title"

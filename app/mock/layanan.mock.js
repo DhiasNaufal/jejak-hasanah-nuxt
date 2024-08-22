@@ -3,6 +3,7 @@ export default {
     desc: "Jejak Hasanah bangga menawarkan berbagai jenis kendaraan untuk memenuhi kebutuhan transportasi perusahaan di segala sektor. Kami menyediakan Bus, Minibus, Light Vehicle (LV), dan SUV dengan spesifikasi yang dapat disesuaikan serta layanan premium untuk memastikan kelancaran operasional.",
     variant: [
       {
+        id: "1",
         name: "Bus",
         desc: "Kami menyediakan bus dengan berbagai ukuran yang dapat disesuaikan sesuai kebutuhan klien. Menggunakan karoseri terbaik pilihan kami, bus ini dirancang untuk memberikan kenyamanan dan keamanan tertinggi dalam layanan antar jemput karyawan (AJK).",
         keunggulan: [
@@ -25,6 +26,7 @@ export default {
         ],
       },
       {
+        id: "2",
         name: "Minibus",
         desc: "Minibus kami dirancang dengan kualitas tinggi untuk mendukung fleksibilitas transportasi Anda. Minibus ideal untuk layanan antar jemput karyawan (AJK) dengan rute yang lebih fleksibel. Keunggulan minibus kami termasuk",
         keunggulan: [
@@ -47,6 +49,7 @@ export default {
         ],
       },
       {
+        id: "3",
         name: "Light Vehicle (LV)",
         desc: "Kami menyediakan Mitsubishi Triton dan Hilux yang dirancang untuk operasional karyawan di area site. Kendaraan ini menawarkan",
         keunggulan: [
@@ -69,6 +72,7 @@ export default {
         ],
       },
       {
+        id: "4",
         name: "SUV",
         desc: "Untuk operasional Project Manager, kami menawarkan Pajero dan Fortuner yang memastikan kenyamanan dan performa tinggi. Keunggulan SUV kami",
         keunggulan: [
@@ -113,6 +117,7 @@ export default {
     desc: "Jejak Hasanah menyediakan layanan advertising yang beragam, meliputi billboard, videotron, mini display, dan café branding. Kami berkomitmen untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri.",
     variant: [
       {
+        id: "1",
         name: "Billboard",
         desc: "Kami menawarkan layanan billboard dengan keunggulan desain panel yang sedikit melengkung untuk visualisasi konten yang lebih baik. Billboard kami ditempatkan di lokasi-lokasi strategis dengan lalu lintas tinggi, memastikan bahwa pesan iklan Anda menjangkau audiens yang lebih luas.",
         keunggulan: [
@@ -131,6 +136,7 @@ export default {
         ],
       },
       {
+        id: "2",
         name: "Videotron",
         desc: "Videotron adalah layar elektronik besar yang dapat menampilkan konten dinamis seperti video, animasi, dan gambar bergerak. Layanan videotron kami dirancang untuk memberikan dampak visual yang kuat dan menarik perhatian audiens.",
         keunggulan: [
@@ -149,6 +155,7 @@ export default {
         ],
       },
       {
+        id: "3",
         name: "Mini Display",
         desc: "Mini display adalah layar iklan kecil yang ideal untuk penggunaan di dalam ruangan atau area yang lebih terbatas. Layanan ini cocok untuk toko ritel, pusat perbelanjaan, dan tempat-tempat dengan ruang iklan terbatas.",
         keunggulan: [
@@ -167,6 +174,7 @@ export default {
         ],
       },
       {
+        id: "3",
         name: "Produk Branding",
         desc: "Layanan produk branding kami dirancang untuk membantu brand dalam membranding suatu sektor usaha dengan produk mereka. Kami menawarkan solusi kreatif untuk meningkatkan daya tarik dan visibilitas merek Anda di sektor usaha yang Anda pilih.",
         keunggulan: [
@@ -185,6 +193,7 @@ export default {
         ],
       },
       {
+        id: "4",
         name: "Keunggulan Layanan Kami",
         desc: "",
         keunggulan: [
