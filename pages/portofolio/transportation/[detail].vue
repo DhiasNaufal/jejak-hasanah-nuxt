@@ -5,13 +5,10 @@
       <v-row class="">
         <v-col class="pa-0 pt-5">
           <NuxtImg
-            src="/img/service/Service_Bus.png"
+            v-for="item in data?.imgPath"
+            :src="item"
             sizes="sm:800px 2xl:1000px"
             class="mb-4"
-          />
-          <NuxtImg
-            src="/img/service/Service_Bus.png"
-            sizes="sm:800px 2xl:1000px"
           />
         </v-col>
         <v-col class="pa-0 pl-5">
@@ -23,18 +20,25 @@
           <p class="pt-3">
             {{ data?.desc1 }}
           </p>
-          <NuxtImg src="/img/mitra/Mitra_kpp.png" sizes="sm:80px 2xl:200px" />
+          <div class="flex gap-2 my-5">
+            <NuxtImg
+              v-for="item in data?.logo"
+              :src="item"
+              fit="cover"
+              height="80"
+            />
+          </div>
           <p>Mitra:</p>
-          <AppTextH5 class="text-primary">{{ data?.mitra }}</AppTextH5>
+          <AppTextH5 class="text-primary mb-2">{{ data?.mitra }}</AppTextH5>
           <p>Lokasi:</p>
-          <AppTextH5 class="text-primary">{{ data?.lokasi }}</AppTextH5>
+          <AppTextH5 class="text-primary mb-2">{{ data?.lokasi }}</AppTextH5>
           <p>Service:</p>
-          <AppTextH5 class="text-primary">{{ data?.service }}</AppTextH5>
+          <AppTextH5 class="text-primary mb-2">{{ data?.service }}</AppTextH5>
 
           <v-card
             variant="flat"
             v-for="item in testi"
-            class="mx-auto bg-light-gray rounded-lg mb-2 mt-4"
+            class="mx-auto bg-light-gray rounded-lg mb-2 mt-5"
             :subtitle="item.jabatan"
             :title="item.nama"
           >

@@ -15,7 +15,7 @@ export default {
             desc: "Menggunakan karoseri terbaik untuk memastikan keamanan dan kenyamanan.",
           },
           {
-            imgPath: "/img/service/Bus_koraseri.png",
+            imgPath: "/img/service/Interior_bus.png",
             title: "Kenyamanan Penumpang",
             desc: "Seat penumpang dan sistem AC dipilih secara cermat untuk kenyamanan maksimal.",
           },
@@ -25,7 +25,7 @@ export default {
             desc: "Tersedia fitur tambahan sesuai kebutuhan klien seperti rotary, radio, running text, dan lain-lain.",
           },
           {
-            imgPath: "/img/service/Bus_koraseri.png",
+            imgPath: "/img/service/4wd_bus.png",
             title: "Modifikasi 4x4 WD",
             desc: "Semua bus dimodifikasi untuk menggunakan 4x4 Wheel Drive, memastikan kemampuan melintasi medan berat dengan lebih baik.",
           },

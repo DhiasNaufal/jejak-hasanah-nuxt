@@ -7,24 +7,17 @@
 
   <AppContainer class="my-10">
     <v-row justify="center">
-      <AppTextH2 id="layanan">Portofolio Proyek Transportasi</AppTextH2>
-      <p class="text-center">
-        {{ portofolio }}
-      </p>
+      <v-col cols="12" align="center">
+        <AppTextH2 class="mb-3">Portofolio Proyek Transportasi</AppTextH2>
+        <p class="text-lg text-neutral-500 md:w-3/5 mb-5">
+          {{ portofolio }}
+        </p>
+      </v-col>
     </v-row>
-
-    <v-row class="mt-10">
-      <div class="w-full flex justify-center">
-        <div class="grid grid-cols-3 gap-x-10 gap-y-10">
-          <AppCardService
-            v-for="item in transportation"
-            :title="item.title"
-            :desc="item.desc1"
-            :path="`/portofolio/transportation/${item.title}`"
-          />
-        </div>
-      </div>
-    </v-row>
+    <AppCardItemPorto
+      path="/portofolio/transportation"
+      :items="transportation"
+    />
   </AppContainer>
 </template>
 <script lang="ts" setup>

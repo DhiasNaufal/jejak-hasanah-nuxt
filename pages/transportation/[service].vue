@@ -13,23 +13,23 @@
     <p class="text-lg">
       {{ transportasiData?.desc }}
     </p>
-    <div v-for="(item, index) in transportasiData?.keunggulan">
-      <v-row v-if="index % 2 == 0" align="center">
-        <v-col class="pa-0 pt-5">
-          <NuxtImg :src="item?.imgPath" sizes="sm:800px 2xl:1000px" />
+    <div v-for="(item, index) in transportasiData?.keunggulan" class="my-10">
+      <v-row v-if="index % 2 == 0" align="center" class="my-10">
+        <v-col class="pa-0" align="center">
+          <NuxtImg :src="item?.imgPath" sizes="sm:500px 2xl:600px" />
         </v-col>
         <v-col class="pl-5">
           <AppTextH2>{{ item.title }}</AppTextH2>
           <p class="text-lg">{{ item.desc }}</p>
         </v-col>
       </v-row>
-      <v-row v-if="index % 2 != 0" align="center">
-        <v-col class="pl-5">
+      <v-row v-if="index % 2 != 0" align="center" class="my-10">
+        <v-col class="pl-5" align="end">
           <AppTextH2>{{ item.title }}</AppTextH2>
           <p class="text-lg">{{ item.desc }}</p>
         </v-col>
-        <v-col class="pa-0 pt-5">
-          <NuxtImg :src="item?.imgPath" sizes="sm:800px 2xl:1000px" />
+        <v-col class="pa-0" align="center">
+          <NuxtImg :src="item?.imgPath" sizes="sm:500px 2xl:600px" />
         </v-col>
       </v-row>
     </div>
