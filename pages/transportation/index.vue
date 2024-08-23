@@ -8,10 +8,12 @@
 
   <AppContainer class="my-10">
     <v-row justify="center">
-      <AppTextH2 id="layanan">Layanan Kendaraan</AppTextH2>
-      <p class="text-center">
-        <!-- {{ portofolio }} -->
-      </p>
+      <v-col cols="12" align="center">
+        <AppTextH2 class="mb-3">Layanan Transportasi</AppTextH2>
+        <p class="text-lg text-neutral-500 md:w-3/5 mb-5">
+          Kenyamanan dan keamanan menjadi prioritas kami
+        </p>
+      </v-col>
     </v-row>
     <AppCardItem :items="transportation" />
     <AppSectionSellingPoint

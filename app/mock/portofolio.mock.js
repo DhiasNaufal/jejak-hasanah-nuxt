@@ -73,19 +73,57 @@ export default {
       "Jejak Hasanah dengan bangga menyediakan layanan advertising yang mencakup billboard, videotron, mini display, dan produk branding. Setiap layanan dirancang untuk memberikan solusi periklanan yang efektif dan inovatif kepada klien dari berbagai sektor industri.",
     variant: [
       {
+        logo: ["/img/mitra/Mitra_telkomsel.png"],
+        icon: "mdi-pickaxe",
+        img: "/img/porto/advertising/Cover_billboard.png",
+        imgPath: ["/img/porto/advertising/Cover_billboard.png"],
+        mitra: "PT Telkom Indonesia (persero) tbk",
         title: "Proyek Billboard",
+        service: "Billboard",
+        lokasi: "Jl. HZ. Mustofa",
+        short:
+          "Jejak Hasanah memasang billboard di lokasi strategis Priangan Timur dengan desain melengkung untuk meningkatkan visualisasi iklan klien seperti Telkomsel dan Djarum. Kami terus berupaya meningkatkan dampak visual dan jangkauan iklan.",
         desc: "Jejak Hasanah telah memasang billboard di berbagai lokasi strategis di daerah Priangan Timur, dengan rencana ekspansi ke daerah lainnya. Desain panel billboard yang sedikit melengkung memberikan visualisasi konten yang lebih baik, memastikan bahwa pesan iklan klien seperti Telkomsel, Classmild (rokok), dan Djarum (rokok) dapat menjangkau audiens dengan lebih efektif. Meskipun belum ada pencapaian khusus yang dicatat sejauh ini, kami terus berupaya untuk meningkatkan dampak visual dan jangkauan iklan melalui teknologi dan lokasi strategis.",
       },
       {
+        logo: ["/img/mitra/Mitra_djarum.png"],
+        icon: "mdi-pickaxe",
+        img: "/img/porto/advertising/Cover_videotron.png",
+        imgPath: ["/img/porto/advertising/Cover_videotron.png"],
+        mitra: "PT Djarum",
+        service: "Videotron",
+        lokasi:
+          "Pertigaan Jl Cimulu , Panglayungan, Kec. Cipedes, Kab. Tasikmalaya, Jawa Barat 46134",
         title: "Proyek Videotron",
+        short:
+          "Videotron kami menarik perhatian klien seperti Djarum. Dengan resolusi tinggi dan kecerahan optimal, konten dinamis terlihat jelas bahkan di siang hari. Teknologi canggihnya memungkinkan pembaruan real-time, memberikan fleksibilitas dan dampak visual yang kuat bagi klien.",
         desc: "Videotron kami telah menarik perhatian klien seperti Djarum. Videotron ini dirancang untuk menampilkan konten dinamis seperti video, animasi, dan gambar bergerak dengan resolusi tinggi dan kecerahan optimal, memastikan bahwa iklan terlihat jelas bahkan di siang hari. Teknologi canggih yang digunakan dalam videotron memungkinkan pembaruan konten secara real-time, memberikan fleksibilitas dan efektivitas yang lebih besar bagi klien. Meskipun belum ada pencapaian khusus, kami berkomitmen untuk memberikan dampak visual yang kuat dan menarik melalui inovasi teknologi.",
       },
       {
+        logo: ["/img/mitra/Mitra_supersoccer.png"],
+        icon: "mdi-pickaxe",
+        img: "/img/porto/advertising/Cover_mini_display.png",
+        imgPath: ["/img/porto/advertising/Cover_mini_display.png"],
+        mitra: "GMC Futsal Majalengka",
         title: "Proyek Mini Display",
+        service: "Mini Display",
+        lokasi:
+          "Jl. Kubang Asri, Babakan Jawa, Kec. Majalengka, Kabupaten Majalengka, Jawa Barat 45411",
+        short:
+          "Mini display kami ideal untuk ruang terbatas, seperti tempat futsal dan pemukiman, bekerja sama dengan toko lokal. Klien seperti Djarum memanfaatkannya untuk meningkatkan visibilitas dan keterlibatan pelanggan secara efektif.",
         desc: "Mini display kami dapat ditempatkan secara ideal baik untuk penggunaan di dalam ruangan atau di area yang lebih terbatas. Dua mini display telah ditempatkan di tempat futsal dan daerah pemukiman, bekerja sama dengan toko lokal untuk menampilkan nama toko di mini display. Klien seperti Djarum telah memanfaatkan layanan ini untuk meningkatkan visibilitas dan keterlibatan pelanggan. Mini display ini menawarkan solusi periklanan yang fleksibel dan efektif di ruang yang lebih kecil.",
       },
       {
+        logo: ["/img/mitra/Mitra_djarum.png"],
+        icon: "mdi-pickaxe",
+        img: "/img/porto/advertising/Cover_produk_brand.png",
+        imgPath: ["/img/porto/advertising/Cover_produk_brand.png"],
+        mitra: "PT Djarum",
         title: "Proyek Produk Branding",
+        service: "Proiduk Branding",
+        lokasi: "",
+        short:
+          "Layanan branding Jejak Hasanah membantu brand besar seperti Djarum membranding kafe, restoran, sarana olahraga, dan tempat hiburan di Priangan Timur. Kami fokus menciptakan identitas visual yang kuat dan menarik untuk memastikan pesan mereka tersampaikan secara efektif.",
         desc: "Layanan produk branding dari Jejak Hasanah dirancang untuk membantu brand besar seperti Djarum dalam membranding kafe, restoran, sarana olahraga, dan tempat hiburan dengan produk mereka. Saat ini, kami bekerja sama dengan Djarum dan telah merambah ke berbagai sektor usaha di daerah Priangan Timur. Proyek ini bertujuan untuk menciptakan identitas visual yang kuat dan menarik bagi merek-merek besar, memastikan bahwa pesan mereka sampai ke audiens dengan cara yang paling efektif dan menarik.",
       },
     ],

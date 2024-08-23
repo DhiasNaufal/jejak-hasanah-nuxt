@@ -147,7 +147,7 @@ export default {
         id: "1",
         icon: "mdi-car",
         name: "Billboard",
-        imgPath: "/img/service/Service_Bus.png",
+        imgPath: "/img/porto/advertising/Cover_billboard.png",
         desc: "Kami menawarkan layanan billboard dengan keunggulan desain panel yang sedikit melengkung untuk visualisasi konten yang lebih baik. Billboard kami ditempatkan di lokasi-lokasi strategis dengan lalu lintas tinggi, memastikan bahwa pesan iklan Anda menjangkau audiens yang lebih luas.",
         keunggulan: [
           {
@@ -171,7 +171,7 @@ export default {
         id: "2",
         icon: "mdi-car",
         name: "Videotron",
-        imgPath: "/img/service/Service_Bus.png",
+        imgPath: "/img/porto/advertising/Cover_videotron.png",
         desc: "Videotron adalah layar elektronik besar yang dapat menampilkan konten dinamis seperti video, animasi, dan gambar bergerak. Layanan videotron kami dirancang untuk memberikan dampak visual yang kuat dan menarik perhatian audiens.",
         keunggulan: [
           {
@@ -195,7 +195,7 @@ export default {
         id: "3",
         icon: "mdi-car",
         name: "Mini Display",
-        imgPath: "/img/service/Service_Bus.png",
+        imgPath: "/img/porto/advertising/Cover_mini_display.png",
         desc: "Mini display adalah layar iklan kecil yang ideal untuk penggunaan di dalam ruangan atau area yang lebih terbatas. Layanan ini cocok untuk toko ritel, pusat perbelanjaan, dan tempat-tempat dengan ruang iklan terbatas.",
         keunggulan: [
           {
@@ -219,7 +219,7 @@ export default {
         id: "4",
         icon: "mdi-car",
         name: "Produk Branding",
-        imgPath: "/img/service/Service_Bus.png",
+        imgPath: "/img/porto/advertising/Cover_produk_brand.png",
         desc: "Layanan produk branding kami dirancang untuk membantu brand dalam membranding suatu sektor usaha dengan produk mereka. Kami menawarkan solusi kreatif untuk meningkatkan daya tarik dan visibilitas merek Anda di sektor usaha yang Anda pilih.",
         keunggulan: [
           {

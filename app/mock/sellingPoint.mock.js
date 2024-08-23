@@ -23,7 +23,7 @@ export default {
     {
       no: 1,
       icon: "mdi-account-circle",
-      title: "Design dan Produksi Konten",
+      title: "Design dan Produksi ",
       desc: "Kami menawarkan layanan lengkap mulai dari desain kreatif hingga produksi konten iklan.",
     },
     {

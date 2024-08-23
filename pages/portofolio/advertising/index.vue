@@ -12,8 +12,11 @@
         {{ portofolio }}
       </p>
     </v-row>
-
-    <v-row class="mt-10">
+    <AppCardItemPorto
+      path="/portofolio/advertising"
+      :items="portoAdvertising"
+    />
+    <!-- <v-row class="mt-10">
       <div class="w-full flex justify-center">
         <div class="grid grid-cols-3 gap-x-10 gap-y-10">
           <AppCardService
@@ -24,7 +27,7 @@
           />
         </div>
       </div>
-    </v-row>
+    </v-row> -->
   </AppContainer>
 </template>
 <script lang="ts" setup>

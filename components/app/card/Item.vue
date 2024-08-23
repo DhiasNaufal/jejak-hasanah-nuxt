@@ -11,7 +11,7 @@
           <v-card-text>
             <v-icon color="text"> {{ item.icon }}</v-icon>
             <NuxtLink
-              :to="`/transportation/${item.name}`"
+              :to="`/development`"
               class="text-primary hover:underline hover:cursor-pointer"
             >
               <AppTextH5 class="text-3xl">
