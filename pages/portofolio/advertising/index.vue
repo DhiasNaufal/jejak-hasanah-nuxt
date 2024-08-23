@@ -7,10 +7,12 @@
 
   <AppContainer class="my-10">
     <v-row justify="center">
-      <AppTextH2 id="layanan">Portofolio Proyek Advertising</AppTextH2>
-      <p class="text-center">
-        {{ portofolio }}
-      </p>
+      <v-col cols="12" align="center">
+        <AppTextH2 class="mb-3">Portofolio Proyek Advertising</AppTextH2>
+        <p class="text-lg text-neutral-500 mb-5">
+          {{ portofolio }}
+        </p>
+      </v-col>
     </v-row>
     <AppCardItemPorto
       path="/portofolio/advertising"
@@ -35,7 +37,7 @@ import portofolioMock from "~/app/mock/portofolio.mock";
 import layananMock from "~/app/mock/layanan.mock";
 const heroimg = "background-image: url('/img/service/transport_hero.png')";
 const portoAdvertising = portofolioMock.advertising.variant;
-const portofolio = layananMock.transportation.desc;
+const portofolio = layananMock.advertising.desc;
 </script>
 <style>
 .test {

@@ -9,7 +9,7 @@
     <v-row justify="center">
       <v-col cols="12" align="center">
         <AppTextH2 class="mb-3">Portofolio Proyek Transportasi</AppTextH2>
-        <p class="text-lg text-neutral-500 md:w-3/5 mb-5">
+        <p class="text-lg text-neutral-500 mb-5">
           {{ portofolio }}
         </p>
       </v-col>

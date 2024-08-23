@@ -12,6 +12,8 @@ export default {
       short:
         "Jejak Hasanah mendukung operasi PT Kalimantan Prima Persada (KPP) dan PT PAMAPERSADA Nusantara (PAMA) di tambang batu bara Kalimantan Selatan dengan menyediakan armada bus dan light vehicle untuk antar jemput karyawan.",
       img: "/img/porto/transportasi/Porto_kalsel_1.png",
+      imgCover: "background-image: url('/img/porto-kalimantan.png')",
+
       imgPath: [
         "/img/porto/transportasi/Porto_kalsel_1.png",
         "/img/porto/transportasi/Porto_kalsel_2.png",
@@ -27,6 +29,7 @@ export default {
       id: "2",
       title: "Site Palembang (Muara Enim)",
       name: "Site Palembang (Muara Enim)",
+      imgCover: "background-image: url('/img/porto-palembang.png')",
       icon: "mdi-pickaxe",
       desc1:
         "Di Palembang, Jejak Hasanah bekerja sama dengan PAMA PERSADA dalam menyediakan layanan antar jemput karyawan menggunakan armada Bus di tambang batu bara. Kami berkomitmen memberikan performa terbaik untuk mendukung operasional klien dan memastikan kenyamanan karyawan selama perjalanan",
@@ -50,6 +53,7 @@ export default {
       title: "Site Sulawesi (Konawe Utara)",
       name: "Site Sulawesi (Konawe Utara)",
       icon: "mdi-pickaxe",
+      imgCover: "background-image: url('/img/porto-sulawesi.png')",
       desc1:
         "Di tambang nikel Konawe Utara, Sulawesi, Jejak Hasanah mendukung operasi perusahaan KPP dengan menyediakan armada Bus dan Light Vehicle (Hilux) untuk kebutuhan antar jemput karyawan. Kami berusaha memberikan performa optimal untuk mendukung operasional klien serta memastikan kenyamanan dan keamanan karyawan selama perjalanan.",
       desc2:

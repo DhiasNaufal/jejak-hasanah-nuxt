@@ -27,10 +27,8 @@
     </v-row>
     <v-row justify="center" class="mt-4 mb-4">
       <v-col cols="12" align="center">
-        <AppTextH2 id="layanan">Sejarah Perusahaan</AppTextH2>
-      </v-col>
-      <v-col>
-        <p class="text-center">
+        <AppTextH2 class="mb-3">Sejarah Perusahaan</AppTextH2>
+        <p class="text-lg text-neutral-500 mb-5">
           Perjalanan kami didorong oleh komitmen untuk menjadi perusahaan yang
           inovatif dan terpercaya. Kami adalah perusahaan transportasi dan
           periklanan yang mengkhususkan diri dalam layanan seperti videotron dan
@@ -66,9 +64,7 @@
     <v-row justify="center" class="mt-4 mb-4">
       <v-col cols="12" align="center">
         <AppTextH2 id="layanan">Tetap Teguh dalam Membangun Negeri</AppTextH2>
-      </v-col>
-      <v-col>
-        <p class="text-center">
+        <p class="text-lg text-neutral-500 mb-5">
           Melalui inovasi, kolaborasi, dan integritas, Jejak Hasanah bertujuan
           untuk menjadi bagian penting dalam perjalanan menuju Indonesia yang
           lebih maju dan sejahtera.
