@@ -24,7 +24,16 @@
     </v-row>
   </NuxtLayout>
 </template>
-<script>
+<script setup lang="ts">
+const route = useRouter();
+const goBack = () => {
+  route.push("/");
+};
+definePageMeta({
+  layout: "404",
+});
+</script>
+<!-- <script>
 export default {
   methods: {
     goBack() {
@@ -32,7 +41,7 @@ export default {
     },
   },
 };
-</script>
+</script> -->
 
 <style scoped>
 .button {
