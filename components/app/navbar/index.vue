@@ -1,12 +1,12 @@
 <template>
   <div class="bg-white md:flex gap-3 hidden">
-    <div class="sm:w-[40%] hidden sm:flex justify-end py-5">
+    <div class="sm:w-[30%] hidden sm:flex justify-end py-5 pr-16">
       <NuxtLink to="/">
-        <img src="/img/app/official_logo_jh.png" width="228" />
+        <img src="/img/app/official_logo_jh.png" width="150" />
       </NuxtLink>
     </div>
 
-    <div class="flex flex-col justify-end w-[60%]">
+    <div class="flex flex-col justify-end w-[70%]">
       <div id="contact" class="flex gap-10 items-center pl-12 pb-4">
         <AppNavbarInformation
           icon="mdi-email"

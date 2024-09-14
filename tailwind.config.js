@@ -50,7 +50,8 @@ export default {
       //   },
       // },
       fontFamily: {
-        sans: ["Open Sans", "Inter", "ui-sans-serif", "system-ui"],
+        body: ["Inter"],
+        // sans: ["Open Sans", "Inter", "ui-sans-serif", "system-ui"],
         // dms: ['"Open Sans", sans-serif'],
         fugaz: ["Fugaz One", "Inter", "ui-sans-serif", "system-ui"],
         // sans: ['"Open Sans", sans-serif'],

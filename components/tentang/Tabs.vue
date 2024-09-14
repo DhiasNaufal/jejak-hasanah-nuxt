@@ -17,7 +17,7 @@
   </v-tabs>
   <v-window v-model="tab" class="mt-4">
     <v-window-item value="tentang">
-      <v-container class="bg-light-gray rounded-lg pa-16">
+      <v-container class="bg-light-gray rounded-3xl pa-16">
         <v-row align="center">
           <v-col align="start">
             <AppTextH2 class="pb-5">Tentang Perusahaan</AppTextH2>

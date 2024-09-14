@@ -5,6 +5,7 @@ export const JHLightColors = {
   info: "#228BE6",
   success: "#3EAF3F",
   text: "#1D1A1A",
+  footer: "#131313",
   "light-gray": "#F4F4F4",
   "light-blue": "#DFE9FF",
 };
