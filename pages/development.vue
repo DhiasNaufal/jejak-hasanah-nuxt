@@ -5,7 +5,7 @@
         <v-col cols="12" lg="5" class="pa-10">
           <NuxtImg sizes="100vw sm:50vw md:400px" src="img/logo/JH-Logo.svg" />
           <AppTextH2 class="text-5xl">SORRY</AppTextH2>
-          <p>404 - The page you looking for is not available.</p>
+          <p class="text-neutral-500">404 - The page you looking for is not available.</p>
           <AppButtonPrimary @click="goBack">Back To Home</AppButtonPrimary>
         </v-col>
         <v-col align="center" align-self="end" class="pa-1">

@@ -1,5 +1,5 @@
 <template>
-  <AppHeroImage class="h-[30vh]" :img="heroimg">
+  <AppHeroImage class="h-[30vh] relative" :img="heroimg">
     <AppContainer class="h-full flex flex-col items-start justify-center">
       <AppTextH2 class="text-white">Layanan Advertising</AppTextH2>
       <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
@@ -10,7 +10,7 @@
     <v-row justify="center">
       <v-col cols="12" align="center">
         <AppTextH2>Layanan Advertising</AppTextH2>
-        <p class="text-lg text-neutral-500 md:w-3/5 mb-5">
+        <p class="text-md text-neutral-500 md:w-3/5 mb-5">
           Jejak Hasanah menyediakan layanan advertising yang beragam, meliputi
           billboard, videotron, mini display, dan café branding.
         </p>
@@ -28,7 +28,7 @@
         </div>
       </div>
     </v-row> -->
-    <AppCardItem :items="advertising" />
+    <AppCardItem :items="advertising"/>
     <AppSectionSellingPoint
       title="Pelayanan Tambahan"
       subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"

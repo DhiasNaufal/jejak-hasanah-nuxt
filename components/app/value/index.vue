@@ -1,12 +1,12 @@
 <template>
-  <div class="flex gap-3">
+  <div class="flex gap-8">
     <div
-      class="text-white flex flex-col items-center"
+      class="text-black flex flex-col items-start"
       v-for="(item, index) in items"
       :key="index"
     >
-      <AppTextH2 class="text-white">{{ item.value }}</AppTextH2>
-      <p>{{ item.desc }}</p>
+      <AppTextH2 class="text-black">{{ item.value }}</AppTextH2>
+      <p class="text-neutral-500">{{ item.desc }}</p>
     </div>
   </div>
 </template>

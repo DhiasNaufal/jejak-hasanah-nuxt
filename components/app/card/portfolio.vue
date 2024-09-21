@@ -1,23 +1,23 @@
 <template>
-  <v-container class="bg-primary rounded-0 my-10">
-    <v-container>
+  <v-container class="bg-neutral-100 rounded-xl my-10">
+    <v-container class="my-4">
       <v-row>
         <v-col>
-          <AppTextH2 class="text-white">
+          <AppTextH2 class="text-black">
             Lihat Portofolio Project Kami
           </AppTextH2>
         </v-col>
       </v-row>
       <v-row align="center">
         <v-col>
-          <NuxtImg :src="imgPath"></NuxtImg>
+          <NuxtImg :src="imgPath" class="rounded-lg"></NuxtImg>
         </v-col>
-        <v-col align="start" justify="between">
+        <v-col align="start" justify="between" class="text-neutral-500">
           <p>
             {{ desc }}
           </p>
           <NuxtLink :to="path">
-            <AppButtonPrimary class="my-4"> Lihat Portofolio </AppButtonPrimary>
+            <AppButtonPrimary> Lihat Portofolio </AppButtonPrimary>
           </NuxtLink>
           <AppValue :items="items" />
         </v-col>

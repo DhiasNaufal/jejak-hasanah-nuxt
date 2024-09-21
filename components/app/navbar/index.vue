@@ -7,7 +7,7 @@
     </div>
 
     <div class="flex flex-col justify-end w-[70%]">
-      <div id="contact" class="flex gap-10 items-center pl-12 pb-4">
+      <div id="contact" class="flex gap-10 items-center pl-12 pb-2">
         <AppNavbarInformation
           icon="mdi-email"
           title="Email"
@@ -22,7 +22,7 @@
 
       <div
         id="navbar"
-        class="triangle text-white px-16 w-full h-[40%] bg-black flex items-center gap-20 text-sm"
+        class="triangle text-white px-16 w-full h-[45%] bg-black flex items-center gap-20 text-sm"
       >
         <div v-for="(menu, index) in navMenu">
           <NuxtLink v-if="typeof menu.path == 'string'" :to="menu.path">

@@ -1,7 +1,7 @@
 <template>
   <AppHeroImage class="h-[30vh] relative" :img="heroimg">
     <AppContainer class="h-full flex flex-col items-start justify-center">
-      <AppTextH2 class="text-white">Advertising</AppTextH2>
+      <AppTextH2 class="text-white">Portofolio Advertising</AppTextH2>
     </AppContainer>
   </AppHeroImage>
 
@@ -9,7 +9,7 @@
     <v-row justify="center">
       <v-col cols="12" align="center">
         <AppTextH2 class="mb-3">Portofolio Proyek Advertising</AppTextH2>
-        <p class="text-lg text-neutral-500 mb-5">
+        <p class="text-md text-neutral-500 mb-5 px-24">
           {{ portofolio }}
         </p>
       </v-col>

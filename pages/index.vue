@@ -7,8 +7,8 @@
       <v-row align="start" justify="center">
         <v-col cols="12" lg="5" class="pa-10">
           <NuxtImg sizes="100vw sm:50vw md:400px" src="img/logo/JH-Logo.svg" />
-          <AppTextH2 class="text-5xl">SORRY</AppTextH2>
-          <p>The page you looking for is under construction.</p>
+          <AppTextH2 class="text-5xl py-4">SORRY</AppTextH2>
+          <p class="text-neutral-500">The page you looking for is under construction.</p>
           <!-- <AppButtonPrimary @click="goBack">Back To Home</AppButtonPrimary> -->
         </v-col>
         <v-col align="center" align-self="end" class="pa-1">
