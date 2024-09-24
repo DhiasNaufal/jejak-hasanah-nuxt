@@ -19,7 +19,11 @@
     <div v-for="(item, index) in transportasiData?.keunggulan">
       <v-row v-if="index % 2 == 0" align="center" class="my-10">
         <v-col class="pa-0" align="center">
-          <NuxtImg :src="item?.imgPath" sizes="sm:500px 2xl:600px" class="rounded-lg" />
+          <NuxtImg
+            :src="item?.imgPath"
+            sizes="sm:500px 2xl:600px"
+            class="rounded-lg"
+          />
         </v-col>
         <v-col class="pl-5">
           <AppTextH2>{{ item.title }}</AppTextH2>
@@ -32,7 +36,11 @@
           <p class="text-lg text-neutral-500 py-2">{{ item.desc }}</p>
         </v-col>
         <v-col class="pa-0" align="center">
-          <NuxtImg :src="item?.imgPath" sizes="sm:500px 2xl:600px" class="rounded-lg" />
+          <NuxtImg
+            :src="item?.imgPath"
+            sizes="sm:500px 2xl:600px"
+            class="rounded-lg"
+          />
         </v-col>
       </v-row>
     </div>

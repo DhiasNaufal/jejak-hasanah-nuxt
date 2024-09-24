@@ -15,7 +15,7 @@
         </p>
       </v-col>
     </v-row>
-    <AppCardItem :items="transportation" />
+    <AppCardItem :items="transportation" route="transportation" />
     <AppSectionSellingPoint
       title="Keunggulan Layanan kami"
       subtitle="Kami berkomitmen untuk memberikan solusi transportasi yang efektif dan inovatif kepada klien dari berbagai sektor industri."

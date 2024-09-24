@@ -28,7 +28,7 @@
         </div>
       </div>
     </v-row> -->
-    <AppCardItem :items="advertising"/>
+    <AppCardItem :items="advertising" route="advertising" />
     <AppSectionSellingPoint
       title="Pelayanan Tambahan"
       subtitle="Jejak Hasanah menyediakan layanan yang komprehensif untuk memastikan kelancaran operasional Anda"
