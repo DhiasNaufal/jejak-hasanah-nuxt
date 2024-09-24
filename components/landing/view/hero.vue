@@ -5,11 +5,10 @@
         <v-row align="center" class="h-full text-white" no-gutters>
           <v-col cols="6">
             <AppTextTitle> {{ content.title }}</AppTextTitle>
-            <AppTextTitle> Insya Allah Amanah</AppTextTitle>
             <br />
             <p>{{ content.desc }}</p>
             <br />
-            <AppButtonPrimary color="secondary">Lebih lanjut</AppButtonPrimary>
+            <!-- <AppButtonPrimary color="secondary">Lebih lanjut</AppButtonPrimary> -->
           </v-col>
         </v-row>
       </AppContainer>
