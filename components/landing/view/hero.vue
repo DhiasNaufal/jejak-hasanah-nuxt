@@ -7,8 +7,15 @@
             <AppTextTitle> {{ content.title }}</AppTextTitle>
             <br />
             <p>{{ content.desc }}</p>
-            <br />
-            <!-- <AppButtonPrimary color="secondary">Lebih lanjut</AppButtonPrimary> -->
+            <!-- <br /> -->
+            <NuxtLink
+              :to="`/tentang`"
+              class="text-primary hover:underline hover:cursor-pointer"
+            >
+              <AppButtonPrimary color="secondary"
+                >Lebih lanjut</AppButtonPrimary
+              >
+            </NuxtLink>
           </v-col>
         </v-row>
       </AppContainer>

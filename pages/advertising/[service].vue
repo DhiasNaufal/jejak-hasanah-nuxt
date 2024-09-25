@@ -47,7 +47,7 @@
     <AppCardPortfolio
       img-path="/img/service/Porto_cover_transport.png"
       :desc="portofolio"
-      path="/portofolio/transportation"
+      path="/portofolio/advertising"
     />
   </AppContainer>
 </template>
