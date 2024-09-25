@@ -1,8 +1,8 @@
 <template>
-  <div class="text-center">
+  <div class="text-center pt-8">
     <v-col cols="12" align="center">
       <AppTextH2 class="mb-3">Lihat apa yang sudah kita kerjakan</AppTextH2>
-      <p class="text-lg text-neutral-500 mb-5">
+      <p class="text-md text-neutral-500">
         Dengan pengalaman luas di berbagai sektor, kami telah berhasil menangani
         banyak proyek, mulai dari layanan antar jemput karyawan hingga
         pemasangan media periklanan. Kami terus berinovasi dan berkomitmen untuk

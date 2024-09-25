@@ -16,7 +16,7 @@
     <v-container class="mb-3">
       <v-col cols="12" align="start">
         <p>Testimoni</p>
-        <AppTextH2>Mari dengan kata mereka</AppTextH2>
+        <AppTextH2>Mari dengar kata mereka</AppTextH2>
       </v-col>
       <v-row align="center">
         <v-col justify="center">

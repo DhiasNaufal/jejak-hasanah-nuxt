@@ -8,8 +8,13 @@
             <AppTextTitle> Insya Allah Amanah</AppTextTitle>
             <br />
             <p>{{ content.desc }}</p>
-            <br />
+            <!-- <br /> -->
+            <NuxtLink
+              :to="`/tentang`"
+              class="text-primary hover:underline hover:cursor-pointer"
+            >
             <AppButtonPrimary color="secondary">Lebih lanjut</AppButtonPrimary>
+          </NuxtLink>
           </v-col>
         </v-row>
       </AppContainer>

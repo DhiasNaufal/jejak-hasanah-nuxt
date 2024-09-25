@@ -5,7 +5,7 @@ export default {
       path: "/",
     },
     {
-      title: "Tentang perusahaan",
+      title: "Tentang Perusahaan",
       path: "/tentang",
     },
     {

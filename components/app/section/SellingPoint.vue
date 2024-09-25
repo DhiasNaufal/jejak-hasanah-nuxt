@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-col cols="12" class="py-6" align="center">
+  <v-container class="py-8">
+    <v-col cols="12" align="center">
       <AppTextH2 class="mb-3">{{ title }}</AppTextH2>
       <p class="text-md text-neutral-500 md:w-3/5">
         {{ subtitle }}

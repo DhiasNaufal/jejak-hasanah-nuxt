@@ -10,9 +10,9 @@
         {{ number }}
       </div>
     </div>
-    <div class="w-1/2 flex flex-col gap-0 items-start">
+    <div class="w-1/2 flex flex-col gap-0 items-start pb-4">
       <AppTextH5 class="text-text">{{ title }}</AppTextH5>
-      <p>
+      <p class="text-md text-neutral-500 py-2">
         {{ desc }}
       </p>
       <NuxtLink :to="path">
