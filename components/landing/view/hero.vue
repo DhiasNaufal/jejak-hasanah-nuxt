@@ -4,7 +4,9 @@
       <AppContainer class="h-full mb-6">
         <v-row align="center" class="h-full text-white" no-gutters>
           <v-col cols="6">
-            <AppTextTitle> {{ content.title }}</AppTextTitle>
+            <AppTextH2 class="text-white text-5xl">
+              {{ content.title }}</AppTextH2
+            >
             <br />
             <p>{{ content.desc }}</p>
             <!-- <br /> -->

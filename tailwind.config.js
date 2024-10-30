@@ -14,6 +14,9 @@ export default {
       presets: {
         "my-heading": ["font-bold", "text-3xl", "text-blue-700"],
       },
+      screens: {
+        "custom-1168": "1168px", // Define custom breakpoint at 1168px
+      },
       colors: { primary: "#2F318B" },
       // colors: {
       //   JBlue: {
