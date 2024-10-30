@@ -8,24 +8,6 @@
         </h1>
         <AppButtonPrimary label="Pelajari lebih lanjut" />
       </div>
-      <!-- <div
-        id="picture"
-        class="md:w-1/2 flex items-end justify-end md:gap-12 gap-5"
-      >
-        <NuxtImg
-          src="/img/bus.png"
-          height="1000"
-          width="700"
-          class="rounded-xl"
-          format="webp"
-        />
-        <NuxtImg
-          src="img/bus.png"
-          height="241"
-          class="rounded-xl"
-          format="webp"
-        />
-      </div> -->
     </div>
   </section>
 </template>

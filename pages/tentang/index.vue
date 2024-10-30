@@ -11,14 +11,13 @@
         <TentangTabs />
       </v-col>
     </v-row>
-    <v-row align="center" class="my-10">
-      <v-col align="center">
-        <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" -->
-        /></v-col
-      >
-      <v-col align="start">
+    <v-row align="center" class="py-24">
+      <v-col align="center" class="pr-4">
+        <NuxtImg src="img/mitra/Mitra.png" sizes="sm:500px 2xl:1000px" />
+      </v-col>
+      <v-col align="start" class="pl-4">
         <AppTextH2 class="pb-5">Dipercaya oleh Banyak Perusahaan</AppTextH2>
-        <p>
+        <p class="text-neutral-500">
           Sudah banyak perusahaan yang memberikan kepercayaan serta bekerja sama
           dengan kami untuk menghasilkan produk periklanan serta jasa
           transportasi dengan profesionalisme, mengedepankan inovasi, serta
@@ -28,10 +27,8 @@
     </v-row>
     <v-row justify="center" class="mt-4 mb-4">
       <v-col cols="12" align="center">
-        <AppTextH2 id="layanan">Sejarah Perusahaan</AppTextH2>
-      </v-col>
-      <v-col>
-        <p class="text-center">
+        <AppTextH2 class="mb-3">Sejarah Perusahaan</AppTextH2>
+        <p class="mx-24 text-neutral-500">
           Perjalanan kami didorong oleh komitmen untuk menjadi perusahaan yang
           inovatif dan terpercaya. Kami adalah perusahaan transportasi dan
           periklanan yang mengkhususkan diri dalam layanan seperti videotron dan
@@ -39,37 +36,41 @@
         </p>
       </v-col>
     </v-row>
-    <v-timeline align="start">
+
+    <v-timeline>
       <v-timeline-item
         v-for="(i, index) in sejarah"
         :key="index"
         dot-color="primary"
         size="small"
+        fill-dot
       >
         <template v-slot:opposite>
-          <NuxtImg :src="i.img" sizes="sm:180px 2xl:180px" />
+          <div class="flex py-10">
+            <NuxtImg :src="i.img" sizes="sm:180px 2xl:180px" />
+          </div>
         </template>
-        <div
-          :class="[
-            'flex',
-            'flex-col',
-            index % 2 === 0 ? 'items-start' : 'items-end',
-          ]"
+        <v-card
+          variant="flat"
+          :class="[index % 2 === 0 ? 'text-start' : 'text-end']"
         >
-          <div class="text-4xl font-bold">{{ i.year }}</div>
-          <AppTextH5 class="text-primary">{{ i.title }}</AppTextH5>
-          <p :class="[index % 2 === 0 ? 'text-start' : 'text-end']">
+          <v-card-title>
+            <AppTextH2 class="text-black">{{ i.year }}</AppTextH2>
+            <AppTextH5 class="text-primary py-1">{{ i.title }}</AppTextH5>
+          </v-card-title>
+          <v-card-text class="text-neutral-500">
             {{ i.desc }}
-          </p>
-        </div>
+          </v-card-text>
+        </v-card>
       </v-timeline-item>
     </v-timeline>
-    <v-row justify="center" class="mt-4 mb-4">
+
+    <v-row justify="center" class="mt-2 pb-24">
       <v-col cols="12" align="center">
-        <AppTextH2 id="layanan">Tetap Teguh dalam Membangun Negeri</AppTextH2>
-      </v-col>
-      <v-col>
-        <p class="text-center">
+        <AppTextH5 id="layanan" class="text-primary mb-3">
+          Tetap Teguh dalam Membangun Negeri
+        </AppTextH5>
+        <p class="mx-24 text-neutral-500">
           Melalui inovasi, kolaborasi, dan integritas, Jejak Hasanah bertujuan
           untuk menjadi bagian penting dalam perjalanan menuju Indonesia yang
           lebih maju dan sejahtera.

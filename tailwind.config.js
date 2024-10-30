@@ -14,6 +14,9 @@ export default {
       presets: {
         "my-heading": ["font-bold", "text-3xl", "text-blue-700"],
       },
+      screens: {
+        "custom-1168": "1168px", // Define custom breakpoint at 1168px
+      },
       colors: { primary: "#2F318B" },
       // colors: {
       //   JBlue: {
@@ -50,7 +53,8 @@ export default {
       //   },
       // },
       fontFamily: {
-        sans: ["Open Sans", "Inter", "ui-sans-serif", "system-ui"],
+        body: ["Inter"],
+        // sans: ["Open Sans", "Inter", "ui-sans-serif", "system-ui"],
         // dms: ['"Open Sans", sans-serif'],
         fugaz: ["Fugaz One", "Inter", "ui-sans-serif", "system-ui"],
         // sans: ['"Open Sans", sans-serif'],

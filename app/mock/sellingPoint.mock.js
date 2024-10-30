@@ -3,7 +3,7 @@ export default {
     {
       no: 1,
       icon: "mdi-certificate",
-      title: "Kualitas dan Keamanan Terjamin",
+      title: "Kualitas dan Keamanan ",
       desc: "Kami menyediakan layanan transportasi dengan kendaraan berkualitas tinggi dan man power terlatih, memastikan keselamatan dan keandalan di segala area",
     },
     {
@@ -15,7 +15,7 @@ export default {
     {
       no: 3,
       icon: "mdi-trophy",
-      title: "Layanan Pelanggan yang Unggul",
+      title: "Layanan Pelanggan ",
       desc: "Kami berkomitmen untuk memberikan layanan pelanggan yang terbaik dengan respons cepat dan solusi tepat waktu untuk kebutuhan dan masalah klien.",
     },
   ],
@@ -23,7 +23,7 @@ export default {
     {
       no: 1,
       icon: "mdi-account-circle",
-      title: "Design dan Produksi Konten",
+      title: "Design dan Produksi ",
       desc: "Kami menawarkan layanan lengkap mulai dari desain kreatif hingga produksi konten iklan.",
     },
     {
@@ -42,20 +42,20 @@ export default {
   transport: [
     {
       no: 1,
-      icon: "mdi-account-circle",
+      icon: "mdi-tools",
       title: "Pemeliharaan Kendaraan",
       desc: "Pengelolaan penuh pemeliharaan kendaraan untuk memastikan performa optimal.",
     },
     {
       no: 2,
-      icon: "mdi-account-circle",
+      icon: "mdi-steering",
       title: "Driver Profesional",
       desc: "Driver terlatih dan telah lulus seleksi ketat, menjamin keamanan dan kenyamanan perjalanan.",
     },
     {
       no: 3,
-      icon: "mdi-account-circle",
-      title: "Pengelolaan Legal dan Permits",
+      icon: "mdi-gavel",
+      title: "Pengelolaan Legal ",
       desc: "Semua urusan legal dan perizinan diurus oleh kami, memberikan kemudahan bagi klien.",
     },
   ],

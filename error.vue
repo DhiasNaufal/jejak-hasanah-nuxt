@@ -9,8 +9,8 @@
               sizes="100vw sm:50vw md:400px"
               src="img/logo/JH-Logo.svg"
             />
-            <AppTextH2 class="text-5xl">SORRY</AppTextH2>
-            <p>404 - The page you looking for is not available.</p>
+            <AppTextH2 class="text-5xl py-4">SORRY</AppTextH2>
+            <p class="text-neutral-500">404 - The page you looking for is not available.</p>
             <AppButtonPrimary @click="goBack">Back To Home</AppButtonPrimary>
           </v-col>
         </v-row>

@@ -4,12 +4,20 @@
       <AppContainer class="h-full mb-6">
         <v-row align="center" class="h-full text-white" no-gutters>
           <v-col cols="6">
-            <AppTextTitle> {{ content.title }}</AppTextTitle>
-            <AppTextTitle> Insya Allah Amanah</AppTextTitle>
+            <AppTextH2 class="text-white text-5xl">
+              {{ content.title }}</AppTextH2
+            >
             <br />
             <p>{{ content.desc }}</p>
-            <br />
-            <AppButtonPrimary color="secondary">Lebih lanjut</AppButtonPrimary>
+            <!-- <br /> -->
+            <NuxtLink
+              :to="`/tentang`"
+              class="text-primary hover:underline hover:cursor-pointer"
+            >
+              <AppButtonPrimary color="secondary"
+                >Lebih lanjut</AppButtonPrimary
+              >
+            </NuxtLink>
           </v-col>
         </v-row>
       </AppContainer>

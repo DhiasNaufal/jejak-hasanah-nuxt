@@ -4,8 +4,14 @@
     <AppContainer class="pt-3 pb-3">
       <v-row class="">
         <v-col class="pa-0 pt-5">
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" />
-          <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+          <NuxtImg
+            src="/img/service/Service_Bus.png"
+            sizes="sm:800px 2xl:1000px"
+          />
+          <NuxtImg
+            src="/img/service/Service_Bus.png"
+            sizes="sm:800px 2xl:1000px"
+          />
         </v-col>
         <v-col class="pa-0 pl-5">
           <div class="h-[15vh] flex items-center">
@@ -16,7 +22,10 @@
           <p class="pt-3">
             {{ data?.desc1 }}
           </p>
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+          <NuxtImg
+            src="/img/service/Service_Bus.png"
+            sizes="sm:800px 2xl:1000px"
+          />
           <p>Mitra:</p>
           <AppTextH5>{{ data?.mitra }}</AppTextH5>
           <p>Lokasi:</p>

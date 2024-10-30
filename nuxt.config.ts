@@ -3,7 +3,7 @@ import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Transportasi dan Media Periklanan - PT. Jejak Hasanah",
+      title: "PT. Jejak Hasanah - Transportasi dan Periklanan",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Jejak Hasanah adalah perusahaan di Indonesia yang menawarkan solusi transportasi lengkap, mulai dari kendaraan ringan hingga bus, sekaligus dikenal sebagai penyedia produk LED dan layanan media periklanan berkualitas tinggi untuk memenuhi berbagai kebutuhan industri dan mobilitas.",
+            "Jejak Hasanah adalah perusahaan di Indonesia yang menawarkan solusi transportasi lengkap, mulai dari kendaraan ringan hingga bus, sekaligus dikenal sebagai penyedia produk LED dan layanan media periklanan berkualitas tinggi untuk memenuhi berbagai kebutuhan industri dan mobilitas. Berlokasi Di Tasikmalaya, Jawa Barat",
         },
       ],
       bodyAttrs: {

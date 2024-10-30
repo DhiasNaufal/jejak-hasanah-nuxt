@@ -1,42 +1,62 @@
 <template>
-  <AppHeroImage class="h-[40vh]">
+  <AppHeroImage class="h-[30vh] relative">
     <v-container class="h-full">
       <v-row align="center" justify="center" class="h-full">
         <v-col justify="center" algin="center">
-          <AppTextH2 class="text-white">{{ transportasiData?.name }}</AppTextH2>
+          <AppTextH2 class="text-white">{{ advertisingData?.name }}</AppTextH2>
         </v-col>
         <v-col></v-col>
       </v-row>
     </v-container>
   </AppHeroImage>
-  <AppContainer class="pt-3 pb-3">
-    <p class="text-lg">
-      {{ transportasiData?.desc }}
-    </p>
-    <div v-for="(item, index) in transportasiData?.keunggulan">
-      <v-row v-if="index % 2 == 0" align="center">
-        <v-col class="pa-0 pt-5">
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+  <AppContainer class="my-10 pb-10">
+    <v-col align="center">
+      <AppTextH2 class="mb-3">{{ advertisingData?.name }}</AppTextH2>
+      <p class="text-md text-neutral-500 mb-5 px-24">
+        {{ advertisingData?.desc }}
+      </p>
+    </v-col>
+    <div v-for="(item, index) in advertisingData?.keunggulan">
+      <v-row v-if="index % 2 == 0" align="center" class="my-10">
+        <v-col class="pa-0" align="center">
+          <NuxtImg
+            :src="item?.imgPath"
+            sizes="sm:500px 2xl:600px"
+            class="rounded-lg"
+          />
         </v-col>
         <v-col class="pl-5">
           <AppTextH2>{{ item.title }}</AppTextH2>
-          <p class="text-lg">{{ item.desc }}</p>
+          <p class="text-lg text-neutral-500 py-2">{{ item.desc }}</p>
         </v-col>
       </v-row>
-      <v-row v-if="index % 2 != 0" align="center">
-        <v-col class="pl-5">
+      <v-row v-if="index % 2 != 0" align="center" class="my-16">
+        <v-col class="pl-5" align="end">
           <AppTextH2>{{ item.title }}</AppTextH2>
-          <p class="text-lg">{{ item.desc }}</p>
+          <p class="text-lg text-neutral-500 py-2">{{ item.desc }}</p>
         </v-col>
-        <v-col class="pa-0 pt-5">
-          <!-- <NuxtImg src="img/mitra/mitra.png" sizes="sm:800px 2xl:1000px" /> -->
+        <v-col class="pa-0" align="center">
+          <NuxtImg
+            :src="item?.imgPath"
+            sizes="sm:500px 2xl:600px"
+            class="rounded-lg"
+          />
         </v-col>
       </v-row>
     </div>
+    <AppCardPortfolio
+      img-path="/img/service/Porto_cover_transport.png"
+      :desc="portofolio"
+      path="/portofolio/advertising"
+    />
   </AppContainer>
 </template>
 <script lang="ts" setup>
 import layananMock from "~/app/mock/layanan.mock";
-const transportasi = layananMock.advertising.variant;
-const transportasiData = transportasi.find((item) => item.id == "1");
+const route = useRoute();
+const advertising: any = layananMock.advertising.variant;
+const advertisingData = advertising.find(
+  (item: any) => item.name == route.params.service
+);
+const portofolio = layananMock.advertising.desc;
 </script>

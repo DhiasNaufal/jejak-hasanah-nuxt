@@ -7,12 +7,16 @@
       <div
         class="opacity flex flex-col items-center justify-center py-16 gap-5 rounded-tl-3xl rounded-tr-3xl"
       >
-        <h1 class="text-4xl font-semibold text-white">
+        <p class="text-3xl font-semibold text-white">
           Hubungi kami untuk obrolan lebih lanjut
-        </h1>
+        </p>
         <div class="flex gap-3">
-          <AppButtonPrimary>{{ kontak.nomor }}</AppButtonPrimary>
-          <AppButtonPrimary>{{ kontak.email }}</AppButtonPrimary>
+          <AppButtonPrimary class="text-subtitle-1">{{
+            kontak.nomor
+          }}</AppButtonPrimary>
+          <AppButtonPrimary class="text-subtitle-1">{{
+            kontak.email
+          }}</AppButtonPrimary>
         </div>
       </div>
     </section>
@@ -24,6 +28,6 @@ const kontak = informationMock.kontak;
 </script>
 <style>
 .opacity {
-  background-color: rgba(47, 49, 139, 0.6);
+  background-color: rgba(47, 49, 139, 0.85);
 }
 </style>

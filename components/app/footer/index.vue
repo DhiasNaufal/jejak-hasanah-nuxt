@@ -1,28 +1,31 @@
 <template>
-  <div class="bg-text py-10 relative overflow-hidden">
+  <div class="bg-text pt-10 relative overflow-hidden">
     <v-container class="">
-      <v-row no-gutters justify="center">
+      <v-row no-gutters justify="between">
         <v-col cols="3" align="center">
-          <img src="/img/home/JH-White.png" width="228" />
+          <img src="/img/app/official_logo_jh_white.png" width="150" />
         </v-col>
         <v-col cols="2">
-          <AppTextH5>Another Page</AppTextH5>
-          <div class="flex items-center" v-for="item in menuMock.menu">
-            <v-icon>mdi-menu-right</v-icon>
-            <NuxtLink :to="item.path">{{ item.title }}</NuxtLink>
+          <p class="font-bold py-1">Jejak Hasanah</p>
+          <div class="flex items-center py-1" v-for="item in menuMock.menu">
+            <!-- <v-icon>mdi-menu-right</v-icon> -->
+            <NuxtLink :to="item.path as string">
+              <p class="text-opacity-5">
+                {{ item.title }}
+              </p>
+            </NuxtLink>
           </div>
         </v-col>
         <v-col cols="3">
-          <AppTextH5>Contact Us</AppTextH5>
-          <div class="flex items-start" v-for="item in contact">
+          <p class="font-bold py-1">Contact Us</p>
+          <div class="flex gap-2 items-start py-1" v-for="item in contact">
             <v-icon>{{ item.icon }}</v-icon>
             <NuxtLink>{{ item.value }}</NuxtLink>
           </div>
         </v-col>
         <v-col cols="2">
-          <AppTextH5>Follow Us</AppTextH5>
-          <p>Follow Us For Update</p>
-          <div>
+          <p class="font-bold py-1">Follow Us For Update</p>
+          <div class="flex gap-2">
             <v-icon v-for="item in socialMedia">{{ item.icon }}</v-icon>
           </div>
         </v-col>
@@ -33,9 +36,9 @@
       class="-z-9 absolute -bottom-12 opacity-5 right-20"
       sizes="sm:180px 2xl:180px"
     />
-  </div>
-  <div class="text-center bg-white">
-    Copyright © 2024 Jejak Hasanah. All right reserved.
+    <div class="text-center text-[12px] py-1 pb-4 pt-10">
+      Copyright © 2024 Jejak Hasanah. All right reserved.
+    </div>
   </div>
 </template>
 <script lang="ts" setup>
