@@ -1,5 +1,5 @@
 <template>
-  <AppHeroImage class="h-[30vh]">
+  <!-- <AppHeroImage class="h-[30vh]">
     <AppContainer class="h-full flex flex-col items-start justify-center">
       <AppTextH2 class="text-white">Tentang Perusahaan</AppTextH2>
       <AppTextH2 class="text-white">Jejak Hasanah</AppTextH2>
@@ -77,7 +77,7 @@
         </p>
       </v-col>
     </v-row>
-  </AppContainer>
+  </AppContainer> -->
 </template>
 <script lang="ts" setup>
 import sejarahMock from "~/app/mock/sejarah.mock";
