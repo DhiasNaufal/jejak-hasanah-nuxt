@@ -1,6 +1,7 @@
 <template>
   <div
     class="h-[100px] w-1/2 trapezoid absolute bottom-0 right-0 px-28 flex gap-16 items-center justify-center"
+    :style="{ backgroundImage: `url(${backgroundUrl})` }"
   >
     <div
       class="text-white flex flex-col items-center"
