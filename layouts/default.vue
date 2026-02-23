@@ -1,10 +1,11 @@
 <template>
-  <div class="hidden custom-1168:block">
-    <AppNavbar />
-    <slot />
-    <AppFooterBanner />
-    <AppFooter />
-  </div>
+  <AppNavbar />
+  <!-- <div class="custom-1168:block"> -->
+  <!-- <slot /> -->
+  <!-- </div> -->
+  <AppFooterBanner />
+  <AppFooter />
+
   <div class="flex items-center justify-center h-screen custom-1168:hidden">
     <v-container>
       <div class="flex flex-col items-center text-center">
